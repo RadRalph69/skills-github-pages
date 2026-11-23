@@ -8,7 +8,7 @@ gelb markiert, bis er ersetzt ist.
 # Öffentliche Adresse der Website OHNE abschließenden Schrägstrich.
 # Solange keine eigene Domain verbunden ist, ist das die GitHub-Pages-Adresse.
 # Mit eigener Domain z. B.:  SITE_URL = "https://www.villabelvedere.xyz"
-SITE_URL = "https://radralph69.github.io/skills-github-pages"
+SITE_URL = "https://belvedere-oliveoil.com"
 
 # Kontaktformular: statische Seiten (GitHub Pages) können keine E-Mails versenden.
 # Das Formular wird an einen Formular-Dienst geschickt, z. B. Formspree
