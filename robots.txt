@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://radralph69.github.io/skills-github-pages/sitemap.xml

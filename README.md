@@ -1,37 +1,78 @@
+# Villa Belvedere – Website
 
-<div align="center">
+Mehrsprachige Informations-Website (Italienisch = Hauptsprache, Deutsch, Englisch) für das biologische
+Olivenöl extra vergine der Azienda Agricola Villa Belvedere am Monte Pisano.
 
-# 🎉 Congratulations RadRalph69! 🎉
+- Reines statisches HTML/CSS (+ 2 KB JavaScript) → schnell, sicher, ideal für Google.
+- **Keine Cookies, kein Tracking, keine externen Schriften/CDNs** → kein Cookie-Banner nötig.
+- **Kein Verkauf**: keine Preise, kein Warenkorb, keine Kaufaufforderung → kein Fernabsatzvertrag.
 
-<img src="https://octodex.github.com/images/welcometocat.png" height="200px" />
+## Sitemap (Seitenstruktur)
 
-### 🌟 You've successfully completed the exercise! 🌟
+| Reiter | Italienisch (Standard) | Deutsch | Englisch |
+|---|---|---|---|
+| Home | `/` | `/de/` | `/en/` |
+| Öl des Grafen | `/olio-del-conte/` | `/de/oel-des-grafen/` | `/en/the-counts-oil/` |
+| Öl, Energie des Lebens | `/olio-energia-della-vita/` | `/de/oel-energie-des-lebens/` | `/en/oil-energy-of-life/` |
+| Die Ölbauern | `/gli-olivicoltori/` | `/de/die-oelbauern/` | `/en/the-olive-growers/` |
+| Kontakt | `/contatti/` | `/de/kontakt/` | `/en/contact/` |
+| Impressum (Footer) | `/note-legali/` | `/de/impressum/` | `/en/legal-notice/` |
+| Datenschutz (Footer) | `/privacy/` | `/de/datenschutz/` | `/en/privacy-policy/` |
+| HTML-Sitemap (Footer) | `/mappa-del-sito/` | `/de/sitemap/` | `/en/sitemap/` |
 
-## 🚀 Share Your Success!
+Dazu: `sitemap.xml` (mit hreflang-Verknüpfungen und Bildern), `robots.txt`, `404.html`, `site.webmanifest`.
 
-**Show off your new skills and inspire others!**
+## Technik & SEO
 
-<a href="https://twitter.com/intent/tweet?text=I%20just%20completed%20the%20%22GitHub%20Pages%22%20GitHub%20Skills%20hands-on%20exercise!%20%F0%9F%8E%89%0A%0Ahttps%3A%2F%2Fgithub.com%2FRadRalph69%2Fskills-github-pages%0A%0A%23GitHubSkills%20%23OpenSource%20%23GitHubLearn%0A" target="_blank" rel="noopener noreferrer">
-  <img src="https://img.shields.io/badge/Share%20on%20X-1da1f2?style=for-the-badge&logo=x&logoColor=white" alt="Share on X" />
-</a>
-<a href="https://bsky.app/intent/compose?text=I%20just%20completed%20the%20%22GitHub%20Pages%22%20GitHub%20Skills%20hands-on%20exercise!%20%F0%9F%8E%89%0A%0Ahttps%3A%2F%2Fgithub.com%2FRadRalph69%2Fskills-github-pages%0A%0A%23GitHubSkills%20%23OpenSource%20%23GitHubLearn%0A" target="_blank" rel="noopener noreferrer">
-  <img src="https://img.shields.io/badge/Share%20on%20Bluesky-0085ff?style=for-the-badge&logo=bluesky&logoColor=white" alt="Share on Bluesky" />
-</a>
-<a href="https://www.linkedin.com/feed/?shareActive=true&text=I%20just%20completed%20the%20%22GitHub%20Pages%22%20GitHub%20Skills%20hands-on%20exercise!%20%F0%9F%8E%89%0A%0Ahttps%3A%2F%2Fgithub.com%2FRadRalph69%2Fskills-github-pages%0A%0A%23GitHubSkills%20%23OpenSource%20%23GitHubLearn%0A" target="_blank" rel="noopener noreferrer">
-  <img src="https://img.shields.io/badge/Share%20on%20LinkedIn-0077b5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Share on LinkedIn" />
-</a>
+- Eigene, sprechende URLs je Sprache; `hreflang` (it/de/en + `x-default` → it) auf jeder Seite und in der Sitemap.
+- `canonical`, Meta-Description, Open Graph / Twitter-Card mit eigenem Vorschaubild (1200×630).
+- Strukturierte Daten (JSON-LD): Organization, WebSite, WebPage/Article/AboutPage/ContactPage, BreadcrumbList.
+- Semantisches HTML, genau eine H1 pro Seite, Alt-Texte, Skip-Link, Tastaturbedienung, sichtbarer Fokus.
+- Responsive Bilder (WebP in 3 Größen, `srcset`/`sizes`, feste Breite/Höhe gegen Layout-Sprünge, Lazy Loading,
+  Hero mit `fetchpriority="high"`), Schrift lokal (Cormorant Garamond, OFL) mit `preload`.
+- Content-Security-Policy, Referrer-Policy, kein Inline-JavaScript.
+- Impressum und Datenschutz sind `noindex` (stehen nicht in Google, sind aber von jeder Seite im Footer verlinkt).
 
-### 🎯 What's Next?
-**Keep the momentum going!**
+## Inhalte bearbeiten
 
-[![](https://img.shields.io/badge/Return%20to%20Exercise-%E2%86%92-1f883d?style=for-the-badge&logo=github&labelColor=197935)](https://github.com/RadRalph69/skills-github-pages/issues/1)
-[![GitHub Skills](https://img.shields.io/badge/Explore%20GitHub%20Skills-000000?style=for-the-badge&logo=github&logoColor=white)](https://skills.github.com)
+Die HTML-Seiten werden **erzeugt** – bitte nicht direkt die `index.html`-Dateien bearbeiten, sondern:
 
-*There's no better way to learn than building things!* 🚀
+| Was | Datei |
+|---|---|
+| Domain, Formular-Endpoint, Impressumsdaten | `_src/config.py` |
+| Texte Italienisch / Deutsch / Englisch | `_src/content_it.py`, `_src/content_de.py`, `_src/content_en.py` |
+| Design (Farben, Schriften, Layout) | `assets/css/style.css` |
+| Bilder | siehe `_src/BILD-PROMPTS.md` |
 
-</div>
+Danach neu erzeugen:
 
----
+```bash
+python3 _src/build.py
+```
 
-&copy; 2025 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
+(benötigt Python 3 mit Pillow: `pip install pillow`). Platzhalter stehen in `[eckigen Klammern]` und
+sind auf der Website **gelb markiert**, bis sie ersetzt sind.
 
+## Vor dem Livegang – Checkliste
+
+1. **Impressum/Datenschutz**: alle `[...]`-Felder in `_src/config.py` ausfüllen (Inhaber, Adresse, Telefon,
+   E-Mail, PEC, Partita IVA, Codice Fiscale, REA, Bio-Kontrollstelle und Code).
+2. **Kontaktformular**: bei Formspree (oder einem anderen Formular-Dienst) ein Formular anlegen, den Endpoint
+   in `FORM_ENDPOINT` eintragen und Anbieterdaten in `FORM_PROVIDER` prüfen. Ein Auftragsverarbeitungsvertrag
+   (DPA) mit dem Anbieter abschließen.
+3. **Bio-Angaben**: „biologico/Bio“ nur verwenden, wenn die Zertifizierung besteht (VO (EU) 2018/848).
+4. **Gesundheitsangabe Polyphenole**: nur stehen lassen, wenn der Laborwert ≥ 250 mg/kg Hydroxytyrosol und
+   Derivate beträgt (VO (EU) 432/2012). Sonst den Kasten auf „Öl, Energie des Lebens“ entfernen.
+5. **Laborwerte** in der Tabelle eintragen, historische Angaben (Grafenfamilie, Jahreszahlen) prüfen.
+6. **Eigene Domain** (z. B. `villabelvedere.xyz`): in `_src/config.py` `SITE_URL` ändern, `build.py`
+   ausführen, in GitHub unter *Settings → Pages → Custom domain* eintragen und *Enforce HTTPS* aktivieren.
+   Erst dann liegt `robots.txt` im Wurzelverzeichnis der Domain, wo Google sie liest.
+7. **Google Search Console**: Domain bestätigen und `sitemap.xml` einreichen.
+8. Rechtstexte abschließend von einer Fachperson (Anwalt/Kammer) prüfen lassen – die Texte sind sorgfältige
+   Vorlagen, aber keine Rechtsberatung.
+
+## Bilder neu erzeugen (Platzhalter)
+
+```bash
+python3 _src/images.py && node _src/rasterize.js && python3 _src/optimize.py && node _src/icons.js && python3 _src/build.py
+```
