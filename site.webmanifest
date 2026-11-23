@@ -1,0 +1,27 @@
+{
+  "name": "Villa Belvedere – Olio extravergine del Monte Pisano",
+  "short_name": "Villa Belvedere",
+  "lang": "it",
+  "start_url": "/skills-github-pages/",
+  "scope": "/skills-github-pages/",
+  "display": "browser",
+  "background_color": "#f8efdf",
+  "theme_color": "#2b1f2e",
+  "icons": [
+    {
+      "src": "/skills-github-pages/assets/img/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/skills-github-pages/assets/img/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/skills-github-pages/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

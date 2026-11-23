@@ -36,3 +36,7 @@
 ehthumbs.db
 Thumbs.db
 
+
+# Build-Zwischenstände
+_src/png/
+__pycache__/

@@ -1,1 +1,6 @@
-theme: minima
+# Die Website besteht aus fertigem HTML (erzeugt mit _src/build.py).
+# Jekyll kopiert die Dateien nur unverändert; kein Theme.
+exclude:
+  - README.md
+  - LICENSE
+  - _src
