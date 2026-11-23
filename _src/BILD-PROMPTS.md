@@ -11,7 +11,7 @@ Imagen) passende Bilder erzeugen. Die Dateinamen in der Tabelle entsprechen den 
 
 | Datei (Name) | Format | Prompt |
 |---|---|---|
-| `hero-oliveto-tramonto` | 16:9, ≥1920 px | Wide panorama of terraced olive grove on the slopes of Monte Pisano at sunset, an old Tuscan stone farmhouse with a square dovecote tower on the hill, cypresses, two harvesters with long poles and nets under ancient twisted olive trees in backlight |
+| `vista-belvedere-sera` | eigenes Foto (4:3, 1920 px) | Startseite: Abendblick von der Terrasse über die Ebene – echtes Foto, nicht generiert |
 | `villa-belvedere` | 3:2 | Old Tuscan stone farmhouse (casa colonica) with dovecote tower and terracotta roof, arched loggia, cypresses, olive terraces in front, evening light |
 | `monte-pisano-panorama` | 16:9 | View from Monte Pisano olive terraces over the plain of Pisa towards the sea at sunset, the leaning tower small in the far distance, haze |
 | `frantoio-antico` | 3:2 | Interior of a 16th-century olive mill, large granite millstone in a stone basin, terracotta oil jars (orci), warm light from a small arched window, dust in the air |
