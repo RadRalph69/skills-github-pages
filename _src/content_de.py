@@ -231,10 +231,13 @@ ENERGIA = (
 OLIVICOLTORI = (
     section(split(
         h2("Ralph und Christina Striewski", "noi", "Wer wir sind")
-        + "<p>2024 haben wir " + ph("Herkunftsort/-region") + " verlassen und sind nach Belvedere gezogen. Uns hat "
-          "das Abendlicht über den Olivenbäumen gefangen genommen, die Stille der Terrassen und das Gefühl, Teil "
-          "einer Geschichte zu werden, die viel größer ist als wir.</p>"
-          "<p>" + ph("Kurze persönliche Vorstellung: frühere Berufe, was Sie nach Italien geführt hat, was Sie mit dem Land verbindet.") + "</p>"
+        + "<p>Olivenbauern zu werden, war nie unser Plan. Ralph ist 41 Jahre lang geflogen – von 1981 bis 2022 als "
+          "Pilot bei der Lufthansa, zuletzt als Kapitän auf dem Airbus A350. Christina ist Modedesignerin: Von 2013 bis "
+          "2021 haben wir gemeinsam unsere Modefirma Arcanmum Fashion geführt, die glänzende Mode produzierte "
+          "(<a href='https://www.instagram.com/vanilla.pearl/' rel='noopener'>Christina auf Instagram</a>).</p>"
+          "<p>Doch anscheinend haben uns die Olivenbäume gerufen. Nach dem ersten Gespräch und dem ersten Besuch auf "
+          "der Villa Belvedere war uns sofort klar, dass dies unser Ort werden würde. Alles Weitere war Organisation – "
+          "und seit dem Kauf 2024 jede Menge Arbeit und eine ganz neue Materie, die wir lernen.</p>"
           "<p>Wir sind keine geborenen Landwirte: Wir haben gelernt – und lernen jeden Tag – von den Nachbarn, von denen, "
           "die den Hain vor uns gepflegt haben, und von den Bäumen selbst. Mit ihnen führen wir eine Arbeit fort, die vor "
           "fast 300 Jahren begann, als die Mezzadri die ersten Olivenbäume pflanzten.</p>",

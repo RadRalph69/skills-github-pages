@@ -227,10 +227,13 @@ ENERGIA = (
 OLIVICOLTORI = (
     section(split(
         h2("Ralph e Christina Striewski", "noi", "Chi siamo")
-        + "<p>Nel 2024 abbiamo lasciato " + ph("città/regione di provenienza") + " e ci siamo trasferiti a Belvedere. "
-          "Ci ha conquistati la luce della sera sugli olivi, il silenzio delle terrazze e la sensazione di "
-          "entrare in una storia molto più grande di noi.</p>"
-          "<p>" + ph("Breve presentazione personale: professioni precedenti, cosa vi ha portato in Italia, cosa vi lega alla terra.") + "</p>"
+        + "<p>Diventare olivicoltori non è mai stato il nostro piano. Ralph ha volato per 41 anni, dal 1981 al 2022, "
+          "come pilota di Lufthansa, alla fine come comandante dell’Airbus A350. Christina è stilista: dal 2013 al 2021 "
+          "abbiamo guidato insieme la nostra azienda di moda, Arcanmum Fashion, che produceva moda brillante e luminosa "
+          "(<a href='https://www.instagram.com/vanilla.pearl/' rel='noopener'>Christina su Instagram</a>).</p>"
+          "<p>Poi, a quanto pare, ci hanno chiamati gli olivi. Dopo il primo colloquio e la prima visita a Villa "
+          "Belvedere ci è stato subito chiaro: questo sarebbe diventato il nostro posto. Tutto il resto è stato "
+          "organizzazione – e dall’acquisto, nel 2024, tantissimo lavoro e una materia tutta nuova da imparare.</p>"
           "<p>Non siamo nati contadini: abbiamo imparato – e impariamo ogni giorno – dai vicini, da chi ha curato "
           "l’oliveto prima di noi e dagli alberi stessi. Con loro portiamo avanti un lavoro iniziato quasi trecento anni fa, "
           "quando i mezzadri piantarono i primi olivi.</p>",
