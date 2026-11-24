@@ -308,9 +308,9 @@ CONTATTI = section(
            "Bestellungen angenommen und keine Verträge geschlossen.")
     + f"<h3>Direkter Kontakt</h3><address>{L['company']}<br>{L['street']}<br>{L['zip_city']}<br>Italien<br>"
       f"Tel.: {L['phone']}<br>E-Mail: {L['email']}</address>"
-    + "<h3>Anfahrt</h3><p>Die Villa Belvedere liegt an den Hängen des Monte Pisano, "
-    + ph("Wegbeschreibung, z. B. 15 Minuten von Pisa, Ausfahrt …") + ". Für einen Besuch melden Sie sich bitte "
-      "vorher bei uns: Der Olivenhain ist ein Arbeitsort.</p>"
+    + "<h3>Anfahrt</h3><p>Die Villa Belvedere liegt an den Hängen des Monte Pisano bei San Giuliano Terme, "
+      "unweit von Pisa. Eine Wegbeschreibung schicken wir Ihnen gern auf Anfrage. Bitte melden Sie sich vor einem "
+      "Besuch bei uns: Der Olivenhain ist ein Arbeitsort.</p>"
     + "</div>"
     + contact_form(FORM, "de")
     + "</div>", label="scrivici")
