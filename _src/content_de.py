@@ -210,7 +210,7 @@ ENERGIA = (
         + "<ul class='ticks'>"
           "<li><strong>Ökologischer Landbau</strong> nach Verordnung (EU) 2018/848: keine chemischen Herbizide, keine "
           "synthetischen Dünger; Begrünung, Gründüngung und behutsamer Schnitt.</li>"
-          f"<li><strong>Kontrollstelle:</strong> {L['bio_body']} – Code {L['bio_code']}.</li>"
+          f"<li><strong>Kontrollstelle:</strong> {L['bio_body']} – Code {L['bio_code']}, Herkunft: {L['bio_origin']}.</li>"
           "<li><strong>Frühe Ernte</strong> zwischen Oktober und Anfang November, wenn die Oliven beginnen, ihre Farbe zu wechseln.</li>"
           "<li><strong>Von Hand oder mit Erntekämmen</strong>, auf Netzen: Keine Olive wird vom Boden aufgelesen.</li>"
           "<li><strong>Verarbeitung innerhalb weniger Stunden in unserer hofeigenen Ölmühle</strong> mit Kaltextraktion "
@@ -318,11 +318,11 @@ CONTATTI = section(
 LEGAL_PAGE = section(
     '<div class="prose legal">'
     + "<h2>Angaben gemäß § 5 DDG</h2>"
-    + f"<p><strong>{L['company']}</strong><br>Inhaber/in: {L['owner']}<br>{L['legal_form']}<br>{L['street']}<br>{L['zip_city']}<br>Italien</p>"
+    + f"<p><strong>{L['company']}</strong><br>Inhaber: {L['owner']}<br>{L['legal_form']}<br>{L['street']}<br>{L['zip_city']}<br>Italien</p>"
     + f"<h3>Kontakt</h3><p>Telefon: {L['phone']}<br>E-Mail: {L['email']}<br>PEC (zertifizierte E-Mail): {L['pec']}</p>"
     + f"<h3>Steuer- und Registerangaben</h3><p>Umsatzsteuer-Identifikationsnummer (Partita IVA): {L['vat']}<br>"
       f"Steuernummer (Codice fiscale): {L['tax_code']}<br>Registereintrag: {L['register']}, {L['rea']}</p>"
-    + f"<h3>Öko-Kontrollstelle</h3><p>{L['bio_body']}<br>Code: {L['bio_code']}</p>"
+    + f"<h3>Öko-Kontrollstelle</h3><p>{L['bio_body']}<br>Code: {L['bio_code']}<br>Herkunftsangabe: {L['bio_origin']}</p>"
     + f"<h3>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h3><p>{L['content_responsible']}, {L['street']}, {L['zip_city']}, Italien</p>"
     + "<h3>Charakter dieser Website</h3><p>Diese Website dient ausschließlich der Information und der Vorstellung "
       "unseres Betriebs. Es werden keine Waren angeboten, keine Preise genannt und keine Fernabsatzverträge "
