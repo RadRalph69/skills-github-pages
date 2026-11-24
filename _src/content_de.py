@@ -242,7 +242,7 @@ OLIVICOLTORI = (
         h2("Ralph und Christina Striewski", "noi", "Wer wir sind")
         + "<p>Olivenbauern zu werden, war nie unser Plan. Ralph ist 41 Jahre lang geflogen – von 1981 bis 2022 als "
           "Pilot bei der Lufthansa, zuletzt als Kapitän auf dem Airbus A350. Christina ist Modedesignerin: Von 2013 bis "
-          "2021 haben wir gemeinsam unsere Modefirma Arcanmum Fashion geführt, die glänzende Mode produzierte "
+          "2021 haben wir gemeinsam unsere Modefirma Arcanum Fashion geführt, die glänzende Mode produzierte "
           "(<a href='https://www.instagram.com/vanilla.pearl/' rel='noopener'>Christina auf Instagram</a>).</p>"
           "<p>Doch anscheinend haben uns die Olivenbäume gerufen. Nach dem ersten Gespräch und dem ersten Besuch auf "
           "der Villa Belvedere war uns sofort klar, dass dies unser Ort werden würde. Alles Weitere war Organisation – "

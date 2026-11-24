@@ -238,7 +238,7 @@ OLIVICOLTORI = (
         h2("Ralph e Christina Striewski", "noi", "Chi siamo")
         + "<p>Diventare olivicoltori non è mai stato il nostro piano. Ralph ha volato per 41 anni, dal 1981 al 2022, "
           "come pilota di Lufthansa, alla fine come comandante dell’Airbus A350. Christina è stilista: dal 2013 al 2021 "
-          "abbiamo guidato insieme la nostra azienda di moda, Arcanmum Fashion, che produceva moda brillante e luminosa "
+          "abbiamo guidato insieme la nostra azienda di moda, Arcanum Fashion, che produceva moda brillante e luminosa "
           "(<a href='https://www.instagram.com/vanilla.pearl/' rel='noopener'>Christina su Instagram</a>).</p>"
           "<p>Poi, a quanto pare, ci hanno chiamati gli olivi. Dopo il primo colloquio e la prima visita a Villa "
           "Belvedere ci è stato subito chiaro: questo sarebbe diventato il nostro posto. Tutto il resto è stato "

@@ -236,7 +236,7 @@ OLIVICOLTORI = (
         h2("Ralph and Christina Striewski", "noi", "Who we are")
         + "<p>Becoming olive growers was never our plan. Ralph flew for 41 years – from 1981 to 2022 as a Lufthansa "
           "pilot, finally as captain of the Airbus A350. Christina is a fashion designer: from 2013 to 2021 we ran our "
-          "own fashion label together, Arcanmum Fashion, which produced shimmering, glossy fashion "
+          "own fashion label together, Arcanum Fashion, which produced shimmering, glossy fashion "
           "(<a href='https://www.instagram.com/vanilla.pearl/' rel='noopener'>Christina on Instagram</a>).</p>"
           "<p>But it seems the olive trees called us. After the first conversation and the first visit to Villa "
           "Belvedere, we knew at once that this would become our place. Everything else was organisation – and since "
