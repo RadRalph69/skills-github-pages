@@ -302,9 +302,9 @@ CONTATTI = section(
            "concluded through this website.")
     + f"<h3>Direct contact</h3><address>{L['company']}<br>{L['street']}<br>{L['zip_city']}<br>Italy<br>"
       f"Phone: {L['phone']}<br>Email: {L['email']}</address>"
-    + "<h3>How to find us</h3><p>Villa Belvedere lies on the slopes of Monte Pisano, "
-    + ph("directions, e.g. 15 minutes from Pisa, exit …") + ". If you would like to visit, please get in touch "
-      "first: the olive grove is a working farm.</p>"
+    + "<h3>How to find us</h3><p>Villa Belvedere lies on the slopes of Monte Pisano near San Giuliano Terme, "
+      "not far from Pisa. We will gladly send you directions on request. If you would like to visit, please get in "
+      "touch first: the olive grove is a working farm.</p>"
     + "</div>"
     + contact_form(FORM, "en")
     + "</div>", label="scrivici")

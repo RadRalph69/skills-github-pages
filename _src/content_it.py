@@ -305,9 +305,9 @@ CONTATTI = section(
            "ordini e non si concludono contratti.")
     + f"<h3>Contatto diretto</h3><address>{L['company']}<br>{L['street']}<br>{L['zip_city']}<br>{L['country']}<br>"
       f"Tel.: {L['phone']}<br>E-mail: {L['email']}</address>"
-    + "<h3>Come raggiungerci</h3><p>Villa Belvedere si trova sulle pendici del Monte Pisano, "
-    + ph("indicazioni stradali, es. a 15 minuti da Pisa, uscita …") + ". Per una visita vi preghiamo di "
-      "contattarci prima: l’oliveto è un luogo di lavoro.</p>"
+    + "<h3>Come raggiungerci</h3><p>Villa Belvedere si trova sulle pendici del Monte Pisano, a San Giuliano Terme, "
+      "a pochi chilometri da Pisa. Le indicazioni stradali sono disponibili su richiesta. Per una visita vi preghiamo "
+      "di contattarci prima: l’oliveto è un luogo di lavoro.</p>"
     + "</div>"
     + contact_form(FORM, "it")
     + "</div>", label="scrivici")
