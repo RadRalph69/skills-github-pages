@@ -29,7 +29,7 @@ LEGAL = {
     "street": "Via Statale Abetone 25A",
     "zip_city": "56017 San Giuliano Terme (PI)",
     "country": "Italia",
-    "phone": "[+39 ...]",
+    "phone": "+39 331 125 9946",
     "email": "aziendavillabelvedere@pm.me",
     "pec": "aziendavillabelvedere@pec.it",
     "vat": "01578550509",
