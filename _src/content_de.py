@@ -166,15 +166,15 @@ ENERGIA = (
     + section(
         h2("Die gesetzlichen Kennwerte", "parametri")
         + table("Grenzwerte für die Kategorie extra vergine (Delegierte Verordnung (EU) 2022/2104) und Werte unseres Öls",
-                ["Parameter", "Grenzwert extra vergine", "Unser Öl " + ph("Jahrgang")],
-                [["Freie Säure (Ölsäure)", "≤ 0,80 %", ph("…")],
-                 ["Peroxidzahl", "≤ 20 mEq O₂/kg", ph("…")],
-                 ["K232", "≤ 2,50", ph("…")],
-                 ["K270", "≤ 0,22", ph("…")],
-                 ["Median der Fehler", "= 0", ph("…")],
-                 ["Median der Fruchtigkeit", "> 0", ph("…")],
-                 ["Polyphenole gesamt", "kein gesetzlicher Grenzwert", ph("… mg/kg")]],
-                "Werte aus dem Laborbefund eintragen. Niedrige Säure- und Peroxidwerte zeigen gesunde Oliven und eine schnelle Verarbeitung."),
+                ["Parameter", "Grenzwert extra vergine", "Unser Öl 2026"],
+                [["Freie Säure (Ölsäure)", "≤ 0,80 %", "0,35 %"],
+                 ["Peroxidzahl", "≤ 20 mEq O₂/kg", "7,6 mEq O₂/kg"],
+                 ["K232", "≤ 2,50", "<span class=\"pending\">folgt</span>"],
+                 ["K270", "≤ 0,22", "<span class=\"pending\">folgt</span>"],
+                 ["Median der Fehler", "= 0", "<span class=\"pending\">folgt</span>"],
+                 ["Median der Fruchtigkeit", "> 0", "<span class=\"pending\">folgt</span>"],
+                 ["Polyphenole gesamt", "kein gesetzlicher Grenzwert", "<strong>378 mg/kg</strong>"]],
+                "Prüfbericht Nr. 2026-7563 vom 23.10.2026, Enolab Service S.r.l., Capannoli (PI); Probe aus der Ernte vom 3. Oktober 2026. Polyphenole gesamt angegeben als Gallussäure. Die fehlenden Werte folgen mit den nächsten Analysen."),
         "section--cream", label="parametri")
     + section(split(
         h2("Polyphenole: die Kraft des Öls", "polifenoli", "Das Herz der Qualität")
@@ -196,7 +196,7 @@ ENERGIA = (
                "stellt sich bei einer täglichen Aufnahme von 20 g Olivenöl ein.</p>"
                "<p>Die Angabe darf nur für Olivenöl verwendet werden, das <strong>mindestens 5 mg Hydroxytyrosol und "
                "dessen Derivate je 20 g</strong> Öl enthält (entspricht 250 mg/kg). "
-               f"Unser Öl: {ph('Laborwert – die Angabe nur verwenden, wenn der Grenzwert erreicht ist')}.</p>",
+               f"Unser Öl enthält 378 mg/kg Polyphenole gesamt. Maßgeblich für diese Angabe ist jedoch der Gehalt an Hydroxytyrosol und dessen Derivaten, der eine eigene Analyse erfordert. Sie ist in Arbeit – bis das Ergebnis vorliegt, nehmen wir diese Angabe für unser Öl nicht in Anspruch.</p>",
                "note note--claim")
         + "<p>Olivenöl extra vergine ist ein zentraler Bestandteil der Mittelmeerküche. Es besteht zum größten Teil aus "
           "<strong>Ölsäure</strong>, einer einfach ungesättigten Fettsäure, und enthält von Natur aus <strong>Vitamin E</strong> "

@@ -251,3 +251,4 @@ figcaption{font-family:var(--serif);font-style:italic;font-size:1.1rem;color:var
 .credit{display:block;font-family:var(--sans);font-style:normal;font-size:.75rem;color:var(--ink-soft);margin-top:.25rem}
 .credit a{color:inherit}
 .section--dark .credit{color:var(--silver)}
+.pending{color:var(--ink-soft);font-style:italic}
