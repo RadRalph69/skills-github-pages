@@ -23,7 +23,7 @@ FORM_PROVIDER = {
 
 # Angaben für Impressum / Note legali / Datenschutz
 LEGAL = {
-    "company": "Azienda Agricola Villa Belvedere",
+    "company": "Azienda Agricola Villa Belvedere di Corliano",
     "owner": "[Vor- und Nachname Inhaber/in]",
     "legal_form": "[Rechtsform, z. B. impresa individuale / società agricola semplice]",
     "street": "[Via ..., Nr.]",

@@ -12,7 +12,7 @@ UI = {
     "nav": {"home": "Home", "conte": "The Count’s Oil", "energia": "Oil, Energy of Life",
             "olivicoltori": "The Olive Growers", "contatti": "Contact", "legal": "Legal notice",
             "privacy": "Privacy policy", "sitemap": "Site map"},
-    "footer_claim": "Organic extra virgin olive oil from the groves of Monte Pisano, where olives have grown since 1536.",
+    "footer_claim": "Organic extra virgin olive oil from the groves of Monte Pisano, where the mezzadri planted olive trees from 1735. From harvest to bottle, everything on our estate.",
     "vat": "VAT no. (P. IVA)",
     "footer_nav": "Pages",
     "footer_legal": "Legal",
@@ -33,9 +33,11 @@ HOME = (
         + "<p>On the slopes of Monte Pisano, between Pisa and Lucca, stands Villa Belvedere: an old Tuscan farmhouse "
           "with a dovecote tower, surrounded by olive terraces that look out over the plain and, on clear days, all "
           "the way to the sea.</p>"
-          "<p>From 1536 this land belonged to the olive mill and the palazzo of the Count of Pisa. Generations of "
-          "sharecroppers – the <em>mezzadri</em> – pruned, harvested and carried the olives down to the valley. Today "
-          "we continue that work organically, with the same respect for the hill.</p>"
+          "<p>From 1536 the house was part of the estates of the Counts Agostini Fantini Venerosi della Seta. Around 1735 "
+          "the sharecroppers – the <em>mezzadri</em> – began clearing the forest and planting olive trees, each one "
+          "protected by a crescent-shaped stone wall, the “lunetta”. Some of those trees are now around 300 years old.</p>"
+          "<p>Today we farm the grove organically and press in our own olive mill: from harvest to bottle, everything "
+          "happens here, with the same respect for the hill.</p>"
           f"<p>{link('conte', 'Read the story of the Villa →')}</p>",
         fig("villa-belvedere", "The Villa Belvedere farmhouse with its dovecote tower between cypresses and olive trees in the evening light",
             "The farmhouse and its dovecote tower")),
@@ -48,7 +50,7 @@ HOME = (
         h2("Three stories, one oil", "storie")
         + cards([
             ("conte", "frantoio-antico", "The old millstone in the Count’s olive mill", "The Count’s Oil",
-             "Five hundred years of history: from the sharecroppers’ farmhouse to the mill and palazzo of the Count of Pisa."),
+             "Almost five hundred years of history: the Counts della Seta, the mezzadri, the lunette and the Villa’s rebirth."),
             ("energia", "olio-goccia", "A green-gold drop of oil above olives and leaves", "Oil, Energy of Life",
              "What makes an organic, polyphenol-rich extra virgin olive oil special – explained simply."),
             ("olivicoltori", "olivicoltori-ralph-christina", "Two people among olive trees at sunset", "The Olive Growers",
@@ -61,10 +63,10 @@ HOME = (
         + portraits([
             ("ritratto-conte", "Illustrated portrait of a Renaissance nobleman with a black beret and red cloak",
              "The Count", "1536 – the landowner",
-             "“I wanted these terraces because the evening sun is the most generous to the olives.”"),
+             "“I wanted this house to look out over the valley – that is why it is called Belvedere.”"),
             ("ritratto-mezzadra", "Illustrated portrait of a peasant woman with a red headscarf and a basket of olives",
-             "The sharecropper", "1700 – the farm family",
-             "“Half the harvest for the master, half for us. But the toil – that was all ours.”"),
+             "The sharecropper", "1735 – the farm family",
+             "“We won this hill from the forest, stone by stone, lunetta by lunetta.”"),
             ("ritratto-frantoiano", "Illustrated portrait of an elderly miller with a cap and apron",
              "The miller", "1900 – master of the mill",
              "“You feel good oil in your throat: if it tickles, it’s alive.”"),
@@ -87,51 +89,56 @@ HOME = (
 CONTE = (
     section(split(
         h2("A farmhouse in the hills of Pisa", "origini", "The beginnings")
-        + "<p>In 1536 the plain of Pisa was still largely marshland and, in some seasons, under water. To bring the "
-          "hills of Monte Pisano under cultivation, poor labouring families were called in: they received a house and "
-          "a plot of land in exchange for their work and a share of the harvest.</p>"
+        + "<p>In 1536 the plain of Pisa was still largely marshland and, in some seasons, under water. To settle the "
+          "hills of Monte Pisano, poor labouring families were called in: they received a house and a plot of land in "
+          "exchange for their work and a share of the harvest.</p>"
           "<p>That is how Belvedere came to be: a stone farmhouse with a stable, a threshing floor and the typical "
-          "dovecote tower, built where the view opens onto the valley – hence its name, “beautiful view”. The farm "
-          f"belonged to the olive mill and palazzo of the Count of Pisa, {ph('name of the comital family, to be verified')}.</p>",
+          "dovecote tower, built where the view opens onto the valley – hence its name, “beautiful view”. The farm was "
+          "part of the estates of the Counts Agostini Fantini Venerosi della Seta, a noble family of Pisa. At that time "
+          "the hill was still covered in forest.</p>",
         fig("monte-pisano-panorama", "Panorama from Monte Pisano over the plain of Pisa to the sea", "The plain of Pisa seen from Monte Pisano")),
         label="origini")
     + section(
         h2("Five centuries at a glance", "cronologia", "Timeline")
         + timeline([
-            ("1536", "The founding", "The Count of Pisa has the farmhouse built and entrusts the terraces to a sharecropping family. The first olive trees are planted on the dry-stone walls."),
-            ("16th–17th c.", "Drainage and olives", "While ditches and canals are dug in the plain, olive groves spread across the mountain. The oil travels by donkey to the Count’s mill."),
-            ("18th–19th c.", "The age of sharecropping", "The harvest is split in half between landowner and farming family. Up to three generations live in the house, knowing every tree by name."),
-            ("1964", "The end of an era", "A new law bans new sharecropping contracts. Many families leave the hills for the cities; many groves are left untended."),
-            (ph("year"), "Quiet years", ph("Short account of the last decades – owners, restoration, vacancy.")),
-            ("2024", "A new chapter", "Ralph and Christina Striewski arrive at Belvedere and take over the care of the olive trees according to the principles of organic farming."),
+            ("1536", "The settlement", "Sharecropping families settle on the slopes of Monte Pisano. The Belvedere farmhouse is built as part of the estates of the Counts Agostini Fantini Venerosi della Seta."),
+            ("c. 1735", "From forest to olive grove", "The mezzadri begin clearing the forest and planting olive trees, most of them supported by small crescent-shaped dry-stone walls, the “lunette”. Some of those trees still grow today."),
+            ("18th–20th c.", "The age of sharecropping", "The harvest is split in half between landowner and farming family. Up to three generations live in the house, knowing every tree by name."),
+            ("1964", "The end of an era", "The lands of Count Agostini Fantini Venerosi della Seta pass to a Sardinian building contractor – except for Villa di Corliano at the foot of Monte Pisano, directly below Belvedere. The mezzadri leave the Villa."),
+            ("1964 – 1987", "Uncertain years", "Years of unclear ownership follow, during which the olive grove is no longer tended as it once was."),
+            ("1987", "Rebirth", "Munich entrepreneur Rolf Freitag buys the Villa and renovates it completely over several years. The olive grove, too, is turned back into a productive grove."),
+            ("2024", "A new chapter", "Ralph and Christina Striewski buy the Villa and the olive grove, together with the Azienda Agricola Villa Belvedere di Corliano, its organic certification and its own olive mill."),
         ]),
         "section--cream", label="cronologia")
     + section(split(
-        h2("The Count’s mill and palazzo", "frantoio")
-        + "<p>Belvedere’s olives were not pressed at home. They went down to the valley in baskets, to the Count’s "
-          "mill: a large, dark and warm stone room where a granite millstone – turned first by an animal, later by "
-          "water – crushed the fruit into paste. The paste was spread on mats and pressed; the oil rested in "
-          "terracotta jars.</p>"
-          "<p>Part of the oil made its way to the town palazzo in Pisa, where it lit the lamps, dressed the Count’s "
-          "table and was traded for other goods. The rest stayed with the farm family: all year round it was food, "
-          "medicine and light.</p>",
+        h2("The lunette: olive trees won from the forest", "lunette")
+        + "<p>Around 1735 the mezzadri began to transform the hill. They cleared the forest by hand, pulled the stones "
+          "from the soil and used those very stones to build a small crescent-shaped wall around each young olive tree: "
+          "the <em>lunetta</em> (half-moon). It holds soil and rainwater on the steep slope and protects the roots.</p>"
+          "<p>Most of our olive trees still stand inside their lunetta today. Some are around 300 years old: those "
+          "sharecroppers planted them, thinking of their grandchildren.</p>"
+          "<p>The day followed the sun. Trees were pruned in spring, the soil hoed in summer, and in autumn the harvest "
+          "came – long poles beating the branches above cloths spread on the ground. The women looked after the garden, "
+          "the animals and the house; the children gathered fallen olives, one by one. Half the harvest belonged to the "
+          "Count.</p>",
+        fig("mezzadri-tramonto", "Silhouette of a farming family with a donkey on the ridge at sunset", "A sharecropping family heading home")),
+        "section--dark", label="lunette")
+    + section(split(
+        h2("From the Count’s mill to our own mill", "frantoio")
+        + "<p>For centuries Belvedere’s olives went down to the valley in baskets, to the Count’s mill: a large stone "
+          "room where a granite millstone crushed the fruit into a paste that was then pressed on mats. The oil rested "
+          "in terracotta jars; part of it went to the Count, the rest stayed with the farm family – all year round it "
+          "was food, medicine and light.</p>"
+          "<p>In 1964 sharecropping ended and the mezzadri left the Villa. After years of unclear ownership, Rolf "
+          "Freitag bought the estate in 1987, restored it carefully and brought the olive grove back into production. "
+          "In 2024 we took over from him not only the Villa and the grove, but also the Azienda Agricola Villa Belvedere "
+          "di Corliano, with its organic certification and <strong>its own olive mill</strong>.</p>"
+          "<p>That is why today the whole process – from harvest to bottle – takes place right here on our estate.</p>"
+          f"<p>{link('olivicoltori', 'Who looks after the trees today →')}</p>",
         fig("frantoio-antico", "Interior of an old olive mill with a millstone and terracotta jars", "An old olive mill: millstone, basin and jars"),
         rev=True), label="frantoio")
-    + section(split(
-        h2("The life of the sharecroppers", "mezzadri")
-        + "<p>The day followed the sun. Trees were pruned in spring, the soil hoed in summer, and in autumn the "
-          "harvest came – long poles beating the branches above cloths spread on the ground. The women looked after "
-          "the vegetable garden, the animals and the house; the children gathered fallen olives, one by one.</p>"
-          "<p>The sharecropping contract bound family and farm for generations. It was a hard bargain, but it shaped "
-          "the landscape we still see today: dry-stone walls, terraces, paths and olive trees planted by someone "
-          "thinking of their grandchildren.</p>"
-          f"<p>{link('olivicoltori', 'Who looks after the trees today →')}</p>",
-        fig("mezzadri-tramonto", "Silhouette of a farming family with a donkey on the ridge at sunset", "A sharecropping family heading home")),
-        "section--dark", label="mezzadri")
     + band("ramo-olivo", "Olive branch with green and dark olives against the light",
            "An olive tree does not belong to the one who plants it, but to those who come after.", "Tuscan farmers’ saying")
-    + section(note("<strong>Note:</strong> this historical account is a draft based on oral tradition and the general "
-                   f"history of Monte Pisano. {ph('Archive sources, dates and names to be verified and added.')}"))
 )
 
 ENERGIA = (
@@ -166,7 +173,7 @@ ENERGIA = (
           "throat after tasting is mainly due to oleocanthal. A polyphenol-rich oil is also more stable – it oxidises "
           "more slowly and keeps its aromas for longer.</p>"
           "<p>The amount depends on the variety, ripeness, climate and above all on processing. That is why we harvest "
-          "early and take the olives to the mill within a few hours.</p>",
+          "early and process the olives within a few hours in our own mill, just steps from the grove.</p>",
         fig("ramo-olivo", "Olive branch with green and turning olives", "Olives as they turn colour: the moment of polyphenols"),
         rev=True), label="polifenoli")
     + section(
@@ -192,7 +199,7 @@ ENERGIA = (
           f"<li><strong>Control body:</strong> {L['bio_body']} – code {L['bio_code']}.</li>"
           "<li><strong>Early harvest</strong> between October and early November, as the olives begin to change colour.</li>"
           "<li><strong>By hand or with harvesting rakes</strong>, onto nets: no olive is picked up from the ground.</li>"
-          "<li><strong>Milling within a few hours</strong> in a modern continuous mill with cold extraction (below 27 °C).</li>"
+          "<li><strong>Milling within a few hours in our own estate mill</strong>, with cold extraction (below 27 °C): from harvest to bottle, everything on our estate.</li>"
           "<li><strong>Storage</strong> in stainless steel tanks under inert gas, protected from light and heat.</li>"
           "</ul>"
           f"<p>Varieties in our grove: {ph('e.g. Frantoio, Leccino, Moraiolo, Pendolino')}.</p>",
@@ -222,8 +229,9 @@ OLIVICOLTORI = (
           "evening light on the olive trees, the silence of the terraces and the feeling of stepping into a story far "
           "bigger than ourselves.</p>"
           "<p>" + ph("Short personal introduction: previous careers, what brought you to Italy, your bond with the land.") + "</p>"
-          "<p>We were not born farmers: we have learned – and learn every day – from our neighbours, from the millers "
-          "and from the trees themselves. With them, we carry on work that began almost five hundred years ago.</p>",
+          "<p>We were not born farmers: we have learned – and learn every day – from our neighbours, from those who "
+          "tended the grove before us and from the trees themselves. With them, we carry on work that began almost three "
+          "hundred years ago, when the mezzadri planted the first olive trees.</p>",
         fig("olivicoltori-ralph-christina", "Placeholder: two people and a dog among olive trees at sunset",
             "Placeholder for a photo of Ralph and Christina in the olive grove")),
         label="noi")
@@ -232,7 +240,7 @@ OLIVICOLTORI = (
         + '<div class="trio">'
           "<div><h3>Respect for the hill</h3><p>We look after the dry-stone walls, let grass grow between the rows and "
           "protect the bees, insects and birds that live in the grove.</p></div>"
-          "<div><h3>Uncompromising quality</h3><p>Early harvest, immediate milling, laboratory analysis: we want to "
+          "<div><h3>Uncompromising quality</h3><p>Early harvest, immediate milling in our own mill, laboratory analysis: we want to "
           "know exactly what is in our oil.</p></div>"
           "<div><h3>A shared story</h3><p>We tell the story of Belvedere and the people who lived here – because a "
           "landscape is memory.</p></div>"
@@ -245,15 +253,19 @@ OLIVICOLTORI = (
             ("April – May", "Flowering", "The trees are covered in tiny white flowers – the most delicate moment."),
             ("June – August", "Fruit set", "The fruit forms and grows; we tend the soil and the walls."),
             ("September", "Waiting", "We watch the olives ripen and prepare nets, crates and tools."),
-            ("October – November", "Harvest and milling", "We pick as the olives turn colour and take them to the mill the same day."),
+            ("October – November", "Harvest and milling", "We pick as the olives turn colour and press them the same day in our own mill."),
             ("December", "Rest", "The trees rest. We taste the new oil and give thanks to the hill."),
         ]),
         "section--dark", label="anno")
     + section(split(
         h2("The olive trees of Belvedere", "olivi")
         + f"<p>Our grove has around 2,300 trees on approx. 7.5 hectares of terraces, between 100 and "
-          f"160 metres above sea level. Some trees are {ph('estimated age')} years old: they have seen "
-          "generations of sharecroppers come and go, and will bear fruit long after we are gone.</p>"
+          f"160 metres above sea level. Some trees are around 300 years old: the mezzadri planted them "
+          "in their lunette, and they will bear fruit long after we are gone.</p>"
+          "<p>When we bought the Villa and the grove in 2024, there was – and still is – a good deal of work to do before "
+          "every tree can be harvested again. Together with the Azienda Agricola Villa Belvedere di Corliano we took over "
+          "the organic certification and the estate’s own olive mill, so the whole process, from harvest to bottle, "
+          "takes place here on our land.</p>"
           f"<p>{link('energia', 'Discover the qualities of our oil →')}</p>",
         fig("raccolta-olive", "People harvesting olives onto nets under an olive tree", "Harvesting with friends and neighbours"),
         rev=True), label="olivi")
@@ -369,10 +381,10 @@ PAGES = {
     },
     "conte": {
         "title": "The Count’s Oil – 500 Years of Villa Belvedere",
-        "description": "A sharecroppers’ farmhouse on Monte Pisano since 1536, tied to the olive mill and palazzo of the "
-                       "Count of Pisa: the story of Villa Belvedere and its oil.",
+        "description": "A sharecroppers’ farmhouse on Monte Pisano since 1536, an olive grove on lunette since 1735: the "
+                       "story of Villa Belvedere, the Counts della Seta and its oil.",
         "h1": "The Count’s Oil", "nav": "The Count’s Oil", "kicker": "Five centuries of history",
-        "lead": "From sharecroppers’ farmhouse to organic olive grove: the story of Villa Belvedere, the mill and the palazzo of the Count of Pisa.",
+        "lead": "From sharecroppers’ farmhouse to organic olive grove with its own mill: the story of Villa Belvedere.",
         "hero": "mezzadri-tramonto", "hero_alt": "Sharecropping family with a donkey on the ridge of Monte Pisano at sunset",
         "schema": "Article",
         "images": ["mezzadri-tramonto", "monte-pisano-panorama", "frantoio-antico", "ramo-olivo"],
