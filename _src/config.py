@@ -25,7 +25,7 @@ FORM_PROVIDER = {
 LEGAL = {
     "company": "Azienda Agricola Villa Belvedere di Corliano",
     "owner": "Ralph Striewski",
-    "legal_form": "[Rechtsform, z. B. impresa individuale / società agricola semplice]",
+    "legal_form": "Impresa individuale",
     "street": "Via Statale Abetone 25A",
     "zip_city": "56017 San Giuliano Terme (PI)",
     "country": "Italia",

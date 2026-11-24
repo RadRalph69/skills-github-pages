@@ -318,7 +318,7 @@ CONTATTI = section(
 LEGAL_PAGE = section(
     '<div class="prose legal">'
     + "<h2>Angaben gemäß § 5 DDG</h2>"
-    + f"<p><strong>{L['company']}</strong><br>Inhaber: {L['owner']}<br>{L['legal_form']}<br>{L['street']}<br>{L['zip_city']}<br>Italien</p>"
+    + f"<p><strong>{L['company']}</strong><br>Inhaber: {L['owner']}<br>Rechtsform: {L['legal_form']} (Einzelunternehmen)<br>{L['street']}<br>{L['zip_city']}<br>Italien</p>"
     + f"<h3>Kontakt</h3><p>Telefon: {L['phone']}<br>E-Mail: {L['email']}<br>PEC (zertifizierte E-Mail): {L['pec']}</p>"
     + f"<h3>Steuer- und Registerangaben</h3><p>Umsatzsteuer-Identifikationsnummer (Partita IVA): {L['vat']}<br>"
       f"Steuernummer (Codice fiscale): {L['tax_code']}<br>Registereintrag: {L['register']}, {L['rea']}</p>"
