@@ -34,7 +34,7 @@ LEGAL = {
     "pec": "aziendavillabelvedere@pec.it",
     "vat": "01578550509",
     "tax_code": "STRRPH58M25Z401Y",
-    "rea": "[REA PI-......]",
+    "rea": "REA PI-265308",
     "register": "Registro delle Imprese – CCIAA Toscana Nord-Ovest / Pisa",
     "content_responsible": "Ralph Striewski",
     "bio_body": "Q Certificazioni S.r.l.",
