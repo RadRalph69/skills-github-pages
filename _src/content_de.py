@@ -366,7 +366,7 @@ PRIVACY_PAGE = section(
       "<a href='https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement' rel='noopener'>Datenschutzerklärung von GitHub</a>.</p>"
     + "<h2>4. Kontaktformular</h2>"
     + f"<p>Wenn Sie uns über das Kontaktformular schreiben, werden Ihre Angaben (Name, E-Mail-Adresse, Thema, "
-      f"Nachricht) über den Dienst {FP['name']}, {FP['address']}, an uns per E-Mail weitergeleitet. Der Anbieter "
+      f"Nachricht) über den Dienst {FP['name']} (USA) an uns per E-Mail weitergeleitet. Der Anbieter "
       f"kann Daten in den {FP['country']} verarbeiten; die Übermittlung erfolgt auf Grundlage des EU-U.S. Data "
       f"Privacy Framework bzw. von EU-Standardvertragsklauseln (Art. 46 DSGVO). Datenschutzhinweise des Anbieters: "
       f"<a href='{FP['privacy_url']}' rel='noopener'>{FP['privacy_url']}</a>.</p>"

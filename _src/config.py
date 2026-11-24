@@ -13,10 +13,9 @@ SITE_URL = "https://belvedere-oliveoil.com"
 # Kontaktformular: statische Seiten (GitHub Pages) können keine E-Mails versenden.
 # Das Formular wird an einen Formular-Dienst geschickt, z. B. Formspree
 # (https://formspree.io → neues Formular anlegen → Endpoint hier eintragen).
-FORM_ENDPOINT = "https://formspree.io/f/DEIN-FORMULAR-ID"
+FORM_ENDPOINT = "https://formspree.io/f/xbgoqpaj"
 FORM_PROVIDER = {
     "name": "Formspree, Inc.",
-    "address": "[Anschrift des Formular-Anbieters laut dessen Datenschutzerklärung]",
     "privacy_url": "https://formspree.io/legal/privacy-policy",
     "country": "USA",
 }

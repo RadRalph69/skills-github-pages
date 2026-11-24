@@ -358,7 +358,7 @@ PRIVACY_PAGE = section(
       "<a href='https://docs.github.com/it/site-policy/privacy-policies/github-general-privacy-statement' rel='noopener'>informativa privacy di GitHub</a>.</p>"
     + "<h2>4. Modulo di contatto</h2>"
     + f"<p>Se ci scrivete tramite il modulo di contatto, i dati inseriti (nome, e-mail, argomento, messaggio) "
-      f"vengono trasmessi tramite il servizio {FP['name']}, {FP['address']}, che ce li inoltra via e-mail. "
+      f"vengono trasmessi tramite il servizio {FP['name']} (USA), che ce li inoltra via e-mail. "
       f"Il fornitore può trattare i dati in {FP['country']}; il trasferimento avviene sulla base "
       f"dell’EU-U.S. Data Privacy Framework o di clausole contrattuali standard (art. 46 GDPR). "
       f"Informativa del fornitore: <a href='{FP['privacy_url']}' rel='noopener'>{FP['privacy_url']}</a>.</p>"
