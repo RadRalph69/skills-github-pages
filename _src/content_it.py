@@ -212,7 +212,7 @@ ENERGIA = (
           "(temperatura inferiore a 27 °C): dalla raccolta alla bottiglia, tutto sul nostro podere.</li>"
           "<li><strong>Conservazione</strong> in contenitori di acciaio inox sotto gas inerte, al riparo da luce e calore.</li>"
           "</ul>"
-          f"<p>Varietà del nostro oliveto: {ph('es. Frantoio, Leccino, Moraiolo, Pendolino')}.</p>",
+          "<p>Varietà del nostro oliveto: soprattutto <strong>Frantoio</strong> e <strong>Leccino</strong>, con alcune piante di <strong>Moraiolo</strong> – le varietà classiche della Toscana.</p>",
         fig("raccolta-olive", "Raccolta delle olive su reti sotto un grande olivo", "La raccolta: reti, pertiche e cassette")),
         label="bio")
     + section(

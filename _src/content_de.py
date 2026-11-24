@@ -217,7 +217,7 @@ ENERGIA = (
           "(unter 27 °C): von der Ernte bis in die Flasche alles auf unserem Hof.</li>"
           "<li><strong>Lagerung</strong> in Edelstahltanks unter Schutzgas, geschützt vor Licht und Wärme.</li>"
           "</ul>"
-          f"<p>Sorten in unserem Hain: {ph('z. B. Frantoio, Leccino, Moraiolo, Pendolino')}.</p>",
+          "<p>Sorten in unserem Hain: vor allem <strong>Frantoio</strong> und <strong>Leccino</strong>, dazu einige <strong>Moraiolo</strong> – die klassischen Sorten der Toskana.</p>",
         fig("raccolta-olive", "Olivenernte auf Netzen unter einem großen Olivenbaum", "Die Ernte: Netze, Stangen und Kisten")),
         label="bio")
     + section(
