@@ -163,15 +163,15 @@ ENERGIA = (
     + section(
         h2("I parametri di legge", "parametri")
         + table("Limiti per la categoria extravergine (Reg. delegato (UE) 2022/2104) e valori del nostro olio",
-                ["Parametro", "Limite extravergine", "Il nostro olio " + ph("annata")],
-                [["Acidità libera (acido oleico)", "≤ 0,80 %", ph("…")],
-                 ["Numero di perossidi", "≤ 20 mEq O₂/kg", ph("…")],
-                 ["K232", "≤ 2,50", ph("…")],
-                 ["K270", "≤ 0,22", ph("…")],
-                 ["Mediana dei difetti", "= 0", ph("…")],
-                 ["Mediana del fruttato", "> 0", ph("…")],
-                 ["Polifenoli totali", "nessun limite di legge", ph("… mg/kg")]],
-                "Inserire i valori del certificato di analisi del laboratorio. Valori più bassi di acidità e perossidi indicano olive sane e una lavorazione rapida."),
+                ["Parametro", "Limite extravergine", "Il nostro olio 2026"],
+                [["Acidità libera (acido oleico)", "≤ 0,80 %", "0,35 %"],
+                 ["Numero di perossidi", "≤ 20 mEq O₂/kg", "7,6 mEq O₂/kg"],
+                 ["K232", "≤ 2,50", "<span class=\"pending\">in attesa</span>"],
+                 ["K270", "≤ 0,22", "<span class=\"pending\">in attesa</span>"],
+                 ["Mediana dei difetti", "= 0", "<span class=\"pending\">in attesa</span>"],
+                 ["Mediana del fruttato", "> 0", "<span class=\"pending\">in attesa</span>"],
+                 ["Polifenoli totali", "nessun limite di legge", "<strong>378 mg/kg</strong>"]],
+                "Rapporto di prova n. 2026-7563 del 23/10/2026, Enolab Service S.r.l., Capannoli (PI); campione della raccolta del 3 ottobre 2026. Polifenoli totali espressi come acido gallico. I valori mancanti seguiranno con le prossime analisi."),
         "section--cream", label="parametri")
     + section(split(
         h2("Polifenoli: la forza dell’olio", "polifenoli", "Il cuore della qualità")
@@ -192,7 +192,7 @@ ENERGIA = (
                "si ottiene con l’assunzione giornaliera di 20 g di olio d’oliva.</p>"
                "<p>L’indicazione può essere utilizzata solo per oli che contengono <strong>almeno 5 mg di idrossitirosolo "
                "e suoi derivati per 20 g</strong> di olio (pari a 250 mg/kg). "
-               f"Il nostro olio: {ph('valore da analisi di laboratorio – usare il claim solo se il limite è raggiunto')}.</p>",
+               f"Il nostro olio contiene 378 mg/kg di polifenoli totali. Il valore rilevante per questa indicazione – idrossitirosolo e suoi derivati – richiede un’analisi specifica, che è in corso: finché il risultato non è disponibile, non attribuiamo questa indicazione al nostro olio.</p>",
                "note note--claim")
         + "<p>L’olio extravergine d’oliva è un elemento centrale della dieta mediterranea. È composto in gran parte da "
           "<strong>acido oleico</strong>, un acido grasso monoinsaturo, e contiene naturalmente <strong>vitamina E</strong> "

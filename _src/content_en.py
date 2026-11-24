@@ -163,15 +163,15 @@ ENERGIA = (
     + section(
         h2("The legal parameters", "parametri")
         + table("Limits for the extra virgin category (Delegated Regulation (EU) 2022/2104) and values of our oil",
-                ["Parameter", "Extra virgin limit", "Our oil " + ph("harvest year")],
-                [["Free acidity (oleic acid)", "≤ 0.80 %", ph("…")],
-                 ["Peroxide value", "≤ 20 mEq O₂/kg", ph("…")],
-                 ["K232", "≤ 2.50", ph("…")],
-                 ["K270", "≤ 0.22", ph("…")],
-                 ["Median of defects", "= 0", ph("…")],
-                 ["Median of fruitiness", "> 0", ph("…")],
-                 ["Total polyphenols", "no legal limit", ph("… mg/kg")]],
-                "Enter the values from the laboratory report. Low acidity and peroxide values indicate healthy olives and fast processing."),
+                ["Parameter", "Extra virgin limit", "Our oil 2026"],
+                [["Free acidity (oleic acid)", "≤ 0.80 %", "0.35 %"],
+                 ["Peroxide value", "≤ 20 mEq O₂/kg", "7.6 mEq O₂/kg"],
+                 ["K232", "≤ 2.50", "<span class=\"pending\">to follow</span>"],
+                 ["K270", "≤ 0.22", "<span class=\"pending\">to follow</span>"],
+                 ["Median of defects", "= 0", "<span class=\"pending\">to follow</span>"],
+                 ["Median of fruitiness", "> 0", "<span class=\"pending\">to follow</span>"],
+                 ["Total polyphenols", "no legal limit", "<strong>378 mg/kg</strong>"]],
+                "Test report no. 2026-7563 of 23 October 2026, Enolab Service S.r.l., Capannoli (PI); sample from the harvest of 3 October 2026. Total polyphenols expressed as gallic acid. The missing values will follow with the next analyses."),
         "section--cream", label="parametri")
     + section(split(
         h2("Polyphenols: the strength of the oil", "polifenoli", "The heart of quality")
@@ -192,7 +192,7 @@ ENERGIA = (
                "with a daily intake of 20 g of olive oil.</p>"
                "<p>The claim may only be used for olive oil containing <strong>at least 5 mg of hydroxytyrosol and its "
                "derivatives per 20 g</strong> of oil (equivalent to 250 mg/kg). "
-               f"Our oil: {ph('laboratory value – use the claim only if the threshold is met')}.</p>",
+               f"Our oil contains 378 mg/kg of total polyphenols. What counts for this claim, however, is the content of hydroxytyrosol and its derivatives, which requires a specific analysis. It is under way – until the result is available, we do not apply this claim to our oil.</p>",
                "note note--claim")
         + "<p>Extra virgin olive oil is a cornerstone of the Mediterranean diet. It consists mostly of <strong>oleic "
           "acid</strong>, a monounsaturated fatty acid, and naturally contains <strong>vitamin E</strong> (tocopherols), "
