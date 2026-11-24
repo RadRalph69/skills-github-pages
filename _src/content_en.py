@@ -211,7 +211,7 @@ ENERGIA = (
           "<li><strong>Milling within a few hours in our own estate mill</strong>, with cold extraction (below 27 °C): from harvest to bottle, everything on our estate.</li>"
           "<li><strong>Storage</strong> in stainless steel tanks under inert gas, protected from light and heat.</li>"
           "</ul>"
-          f"<p>Varieties in our grove: {ph('e.g. Frantoio, Leccino, Moraiolo, Pendolino')}.</p>",
+          "<p>Varieties in our grove: mainly <strong>Frantoio</strong> and <strong>Leccino</strong>, with some <strong>Moraiolo</strong> – the classic varieties of Tuscany.</p>",
         fig("raccolta-olive", "Olive harvest onto nets beneath a large olive tree", "The harvest: nets, poles and crates")),
         label="bio")
     + section(
