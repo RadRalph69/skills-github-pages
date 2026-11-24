@@ -13,10 +13,9 @@ SITE_URL = "https://belvedere-oliveoil.com"
 # Kontaktformular: statische Seiten (GitHub Pages) können keine E-Mails versenden.
 # Das Formular wird an einen Formular-Dienst geschickt, z. B. Formspree
 # (https://formspree.io → neues Formular anlegen → Endpoint hier eintragen).
-FORM_ENDPOINT = "https://formspree.io/f/DEIN-FORMULAR-ID"
+FORM_ENDPOINT = "https://formspree.io/f/xbgoqpaj"
 FORM_PROVIDER = {
     "name": "Formspree, Inc.",
-    "address": "[Anschrift des Formular-Anbieters laut dessen Datenschutzerklärung]",
     "privacy_url": "https://formspree.io/legal/privacy-policy",
     "country": "USA",
 }
@@ -24,21 +23,22 @@ FORM_PROVIDER = {
 # Angaben für Impressum / Note legali / Datenschutz
 LEGAL = {
     "company": "Azienda Agricola Villa Belvedere di Corliano",
-    "owner": "[Vor- und Nachname Inhaber/in]",
-    "legal_form": "[Rechtsform, z. B. impresa individuale / società agricola semplice]",
-    "street": "[Via ..., Nr.]",
-    "zip_city": "[CAP] [Comune] (PI)",
+    "owner": "Ralph Striewski",
+    "legal_form": "Impresa individuale",
+    "street": "Via Statale Abetone 25A",
+    "zip_city": "56017 San Giuliano Terme (PI)",
     "country": "Italia",
-    "phone": "[+39 ...]",
-    "email": "[info@ihre-domain.it]",
-    "pec": "[PEC-Adresse]",
-    "vat": "[Partita IVA]",
-    "tax_code": "[Codice Fiscale]",
-    "rea": "[REA PI-......]",
+    "phone": "+39 331 125 9946",
+    "email": "aziendavillabelvedere@pm.me",
+    "pec": "aziendavillabelvedere@pec.it",
+    "vat": "01578550509",
+    "tax_code": "STRRPH58M25Z401Y",
+    "rea": "REA PI-265308",
     "register": "Registro delle Imprese – CCIAA Toscana Nord-Ovest / Pisa",
     "content_responsible": "Ralph Striewski",
-    "bio_body": "[Name der Bio-Kontrollstelle]",
-    "bio_code": "[IT-BIO-...]",
+    "bio_body": "Q Certificazioni S.r.l.",
+    "bio_code": "IT-BIO-014",
+    "bio_origin": "Agricoltura Italia",
     "authority_privacy": "Garante per la protezione dei dati personali, Piazza Venezia 11, 00187 Roma – www.garanteprivacy.it",
 }
 
