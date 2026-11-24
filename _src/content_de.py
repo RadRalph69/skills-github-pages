@@ -1,6 +1,6 @@
 """Deutsche Texte. Alle Texte sind Entwürfe und können frei angepasst werden."""
 from config import LEGAL as L, LEGAL_DATE, FORM_PROVIDER as FP
-from lib import (fig, ph, link, section, split, h2, cards, portraits, facts, timeline, band,
+from lib import (photo, credits_list, fig, ph, link, section, split, h2, cards, portraits, facts, timeline, band,
                  table, note, calendar, btn, contact_form)
 
 UI = {
@@ -127,7 +127,7 @@ CONTE = (
         "section--dark", label="lunette")
     + section(split(
         h2("Von der Ölmühle des Grafen zur eigenen Ölmühle", "frantoio")
-        + "<p>Jahrhundertelang wanderten die Oliven aus Belvedere in Körben ins Tal, zur Ölmühle des Grafen: ein "
+        + "<p>Jahrhundertelang wanderten die Oliven aus Belvedere in Körben ins Tal, zur Ölmühle des Grafen in Corliano: ein "
           "großer Raum aus Stein, in dem ein Mühlstein aus Granit die Früchte zu Brei zermahlte, der dann auf Matten "
           "gepresst wurde. Das Öl ruhte in Tonkrügen; ein Teil ging an den Grafen, der Rest blieb der Familie auf dem "
           "Hof – das ganze Jahr über Nahrung, Medizin und Licht.</p>"
@@ -137,8 +137,17 @@ CONTE = (
           "die Azienda Agricola Villa Belvedere di Corliano mit Bio-Zertifizierung und <strong>eigener Ölmühle</strong>.</p>"
           "<p>Deshalb findet heute der gesamte Weg – von der Ernte bis in die Flasche – bei uns auf dem Grundstück statt.</p>"
           f"<p>{link('olivicoltori', 'Wer sich heute um die Bäume kümmert →')}</p>",
-        fig("frantoio-antico", "Inneres einer alten Ölmühle mit Mühlstein und Tonkrügen", "Eine alte Ölmühle: Mühlstein, Becken und Krüge"),
+        photo("corliano-frantoio-1901", "Historisches Foto der Ölmühle von Corliano aus dem Jahr 1901", "Die Ölmühle von Corliano im Jahr 1901 – heute zu besichtigen"),
         rev=True), label="frantoio")
+    + section(split(
+        h2("Die Villa di Corliano", "corliano", "Am Fuß des Monte Pisano")
+        + "<p>Direkt unterhalb von Belvedere, am Fuß des Monte Pisano, liegt die Villa di Corliano, der Sitz der "
+          "Grafen Agostini Fantini Venerosi della Seta. 1964 war sie der einzige Teil ihrer Besitzungen, der nicht an "
+          "den sardischen Bauunternehmer ging.</p>"
+          "<p>Zur Villa gehört auch die alte Ölmühle des Grafen, in der jahrhundertelang die Oliven des Hügels gepresst "
+          "wurden – auch die aus Belvedere. Sie kann noch heute besichtigt werden.</p>",
+        photo("corliano-facciata", "Fassade der Villa di Corliano am Fuß des Monte Pisano", "Die Villa di Corliano")),
+        "section--cream", label="corliano")
     + band("ramo-olivo", "Olivenzweig mit grünen und dunklen Oliven im Gegenlicht",
            "Ein Olivenbaum gehört nicht dem, der ihn pflanzt, sondern denen, die nach ihm kommen.", "Toskanisches Bauernsprichwort")
 )
@@ -329,11 +338,11 @@ LEGAL_PAGE = section(
       "wir keinen Einfluss haben. Für diese fremden Inhalte ist stets der jeweilige Anbieter verantwortlich. Zum "
       "Zeitpunkt der Verlinkung waren keine Rechtsverstöße erkennbar. Bei Bekanntwerden von Rechtsverletzungen "
       "entfernen wir derartige Links umgehend.</p>"
-    + "<h3>Urheberrecht und Bildnachweis</h3><p>Die Texte, Bilder und Grafiken dieser Website unterliegen dem "
+    + "<h3>Fotonachweise</h3>" + credits_list() + "<h3>Urheberrecht und Bildnachweis</h3><p>Die Texte, Bilder und Grafiken dieser Website unterliegen dem "
       "Urheberrecht. Jede Verwertung außerhalb der Grenzen des Urheberrechts bedarf unserer schriftlichen "
       "Zustimmung.</p>"
       "<p>Die Illustrationen von Personen und Landschaften sind digital erstellt und teilweise mit künstlicher "
-      f"Intelligenz erzeugt; die dargestellten Personen sind fiktiv. {ph('Fotonachweise, falls vorhanden')}.</p>"
+      f"Intelligenz erzeugt; die dargestellten Personen sind fiktiv.</p>"
       "<p>Schrift: Cormorant Garamond (SIL Open Font License 1.1), lokal eingebunden.</p>"
     + f"<p class='fineprint'>Stand: {LEGAL_DATE['de']}</p>"
     + "</div>")
@@ -404,7 +413,7 @@ PAGES = {
         "lead": "Vom Bauernhaus der Halbpächter zum Bio-Olivenhain mit eigener Ölmühle: die Geschichte der Villa Belvedere.",
         "hero": "mezzadri-tramonto", "hero_alt": "Halbpächterfamilie mit Esel auf dem Kamm des Monte Pisano im Sonnenuntergang",
         "schema": "Article",
-        "images": ["mezzadri-tramonto", "monte-pisano-panorama", "frantoio-antico", "ramo-olivo"],
+        "images": ["mezzadri-tramonto", "monte-pisano-panorama", "corliano-frantoio-1901", "corliano-facciata", "ramo-olivo"],
         "body": CONTE,
     },
     "energia": {

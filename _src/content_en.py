@@ -1,6 +1,6 @@
 """English texts. All texts are drafts and can be edited freely."""
 from config import LEGAL as L, LEGAL_DATE, FORM_PROVIDER as FP
-from lib import (fig, ph, link, section, split, h2, cards, portraits, facts, timeline, band,
+from lib import (photo, credits_list, fig, ph, link, section, split, h2, cards, portraits, facts, timeline, band,
                  table, note, calendar, btn, contact_form)
 
 UI = {
@@ -125,7 +125,7 @@ CONTE = (
         "section--dark", label="lunette")
     + section(split(
         h2("From the Count’s mill to our own mill", "frantoio")
-        + "<p>For centuries Belvedere’s olives went down to the valley in baskets, to the Count’s mill: a large stone "
+        + "<p>For centuries Belvedere’s olives went down to the valley in baskets, to the Count’s mill at Corliano: a large stone "
           "room where a granite millstone crushed the fruit into a paste that was then pressed on mats. The oil rested "
           "in terracotta jars; part of it went to the Count, the rest stayed with the farm family – all year round it "
           "was food, medicine and light.</p>"
@@ -135,8 +135,17 @@ CONTE = (
           "di Corliano, with its organic certification and <strong>its own olive mill</strong>.</p>"
           "<p>That is why today the whole process – from harvest to bottle – takes place right here on our estate.</p>"
           f"<p>{link('olivicoltori', 'Who looks after the trees today →')}</p>",
-        fig("frantoio-antico", "Interior of an old olive mill with a millstone and terracotta jars", "An old olive mill: millstone, basin and jars"),
+        photo("corliano-frantoio-1901", "Historic photograph of the Corliano olive mill in 1901", "The Corliano olive mill in 1901 – open to visitors today"),
         rev=True), label="frantoio")
+    + section(split(
+        h2("Villa di Corliano", "corliano", "At the foot of Monte Pisano")
+        + "<p>Directly below Belvedere, at the foot of Monte Pisano, stands Villa di Corliano, seat of the Counts "
+          "Agostini Fantini Venerosi della Seta. In 1964 it was the only part of their estates that did not pass to "
+          "the Sardinian building contractor.</p>"
+          "<p>The villa also includes the Count’s old olive mill, where the olives of the hill – Belvedere’s among "
+          "them – were pressed for centuries. It can still be visited today.</p>",
+        photo("corliano-facciata", "Façade of Villa di Corliano at the foot of Monte Pisano", "Villa di Corliano")),
+        "section--cream", label="corliano")
     + band("ramo-olivo", "Olive branch with green and dark olives against the light",
            "An olive tree does not belong to the one who plants it, but to those who come after.", "Tuscan farmers’ saying")
 )
@@ -319,10 +328,10 @@ LEGAL_PAGE = section(
     + "<h3>Liability for links</h3><p>This website contains links to external third-party websites over whose content "
       "we have no control. No legal violations were apparent at the time of linking. If we become aware of any, we "
       "will remove such links immediately.</p>"
-    + "<h3>Copyright and image credits</h3><p>The texts, images and graphics on this website are protected by "
+    + "<h3>Photo credits</h3>" + credits_list() + "<h3>Copyright and image credits</h3><p>The texts, images and graphics on this website are protected by "
       "copyright. Any use beyond the limits of copyright law requires our written consent.</p>"
       "<p>The illustrations of people and landscapes are digitally created and partly generated with artificial "
-      f"intelligence; the people depicted are fictional. {ph('Photo credits, if any')}.</p>"
+      f"intelligence; the people depicted are fictional.</p>"
       "<p>Font: Cormorant Garamond (SIL Open Font License 1.1), hosted locally.</p>"
     + f"<p class='fineprint'>Last updated: {LEGAL_DATE['en']}</p>"
     + "</div>")
@@ -390,7 +399,7 @@ PAGES = {
         "lead": "From sharecroppers’ farmhouse to organic olive grove with its own mill: the story of Villa Belvedere.",
         "hero": "mezzadri-tramonto", "hero_alt": "Sharecropping family with a donkey on the ridge of Monte Pisano at sunset",
         "schema": "Article",
-        "images": ["mezzadri-tramonto", "monte-pisano-panorama", "frantoio-antico", "ramo-olivo"],
+        "images": ["mezzadri-tramonto", "monte-pisano-panorama", "corliano-frantoio-1901", "corliano-facciata", "ramo-olivo"],
         "body": CONTE,
     },
     "energia": {

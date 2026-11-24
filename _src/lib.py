@@ -175,7 +175,8 @@ def credit(name):
 
 
 def credits_list():
-    return "<ul>" + "".join(f"<li>{n}: {credit(n)}</li>" for n in CREDITS) + "</ul>"
+    titles = {"corliano-frantoio-1901": "Frantoio di Corliano, 1901", "corliano-facciata": "Villa di Corliano"}
+    return "<ul>" + "".join(f"<li>{titles.get(n, n)}: {credit(n)}</li>" for n in CREDITS) + "</ul>"
 
 
 def photo(name, alt, caption):

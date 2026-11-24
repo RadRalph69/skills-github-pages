@@ -1,6 +1,6 @@
 """Testi in italiano (lingua principale). Tutti i testi sono bozze da rivedere."""
 from config import LEGAL as L, LEGAL_DATE, FORM_ENDPOINT, FORM_PROVIDER as FP
-from lib import (fig, ph, link, section, split, h2, cards, portraits, facts, timeline, band,
+from lib import (photo, credits_list, fig, ph, link, section, split, h2, cards, portraits, facts, timeline, band,
                  table, note, calendar, btn, contact_form)
 
 UI = {
@@ -125,7 +125,7 @@ CONTE = (
         "section--dark", label="lunette")
     + section(split(
         h2("Dal frantoio del conte al nostro frantoio", "frantoio")
-        + "<p>Per secoli le olive di Belvedere scendevano a valle nelle ceste, fino al frantoio del conte: un grande "
+        + "<p>Per secoli le olive di Belvedere scendevano a valle nelle ceste, fino al frantoio del conte a Corliano: un grande "
           "ambiente in pietra dove una macina di granito riduceva i frutti in pasta, che veniva pressata nei fiscoli. "
           "L’olio riposava negli orci di terracotta; una parte andava al conte, il resto restava alla famiglia del "
           "podere – per tutto l’anno era cibo, medicina e luce.</p>"
@@ -135,8 +135,17 @@ CONTE = (
           "certificazione biologica e un <strong>frantoio proprio</strong>.</p>"
           "<p>Per questo oggi tutto il percorso – dalla raccolta alla bottiglia – si svolge qui, sul nostro podere.</p>"
           f"<p>{link('olivicoltori', 'Chi si prende cura degli olivi oggi →')}</p>",
-        fig("frantoio-antico", "Interno di un antico frantoio con macina in pietra e orci di terracotta", "Un antico frantoio: macina, vasca e orci"),
+        photo("corliano-frantoio-1901", "Fotografia storica del frantoio di Corliano nel 1901", "Il frantoio di Corliano nel 1901 – oggi visitabile"),
         rev=True), label="frantoio")
+    + section(split(
+        h2("La Villa di Corliano", "corliano", "Ai piedi del Monte Pisano")
+        + "<p>Proprio sotto Belvedere, ai piedi del Monte Pisano, sorge la Villa di Corliano, residenza dei conti "
+          "Agostini Fantini Venerosi della Seta. Nel 1964 fu l’unica parte dei loro possedimenti a non passare "
+          "all’imprenditore edile sardo.</p>"
+          "<p>Della villa fa parte anche l’antico frantoio del conte, dove per secoli sono state frante le olive "
+          "della collina – comprese quelle di Belvedere. Ancora oggi lo si può visitare.</p>",
+        photo("corliano-facciata", "Facciata della Villa di Corliano ai piedi del Monte Pisano", "La Villa di Corliano")),
+        "section--cream", label="corliano")
     + band("ramo-olivo", "Ramo di olivo con olive verdi e scure controluce",
            "Un olivo non appartiene a chi lo pianta, ma a chi verrà dopo.", "Detto contadino toscano")
 )
@@ -323,10 +332,10 @@ LEGAL_PAGE = section(
     + "<h3>Responsabilità per i link</h3><p>Il sito contiene link a siti esterni, sui cui contenuti non abbiamo "
       "alcuna influenza. Al momento del collegamento non erano riconoscibili contenuti illeciti. In caso di "
       "segnalazione di violazioni, rimuoveremo immediatamente tali link.</p>"
-    + "<h3>Diritto d’autore e immagini</h3><p>Testi, immagini e grafiche di questo sito sono protetti dal diritto "
+    + "<h3>Crediti fotografici</h3>" + credits_list() + "<h3>Diritto d’autore e immagini</h3><p>Testi, immagini e grafiche di questo sito sono protetti dal diritto "
       "d’autore. Ogni utilizzo al di fuori dei limiti di legge richiede il nostro consenso scritto.</p>"
       "<p>Le illustrazioni di persone e paesaggi sono immagini create digitalmente e, in parte, generate con "
-      f"intelligenza artificiale; i personaggi raffigurati sono immaginari. {ph('Crediti fotografici, se presenti')}.</p>"
+      f"intelligenza artificiale; i personaggi raffigurati sono immaginari.</p>"
       "<p>Font: Cormorant Garamond (SIL Open Font License 1.1), ospitato localmente.</p>"
     + f"<p class='fineprint'>Aggiornamento: {LEGAL_DATE['it']}</p>"
     + "</div>", label=None)
@@ -397,7 +406,7 @@ PAGES = {
         "lead": "Da casa colonica dei mezzadri a oliveto biologico con frantoio proprio: la storia di Villa Belvedere.",
         "hero": "mezzadri-tramonto", "hero_alt": "Famiglia di mezzadri con un asino sul crinale del Monte Pisano al tramonto",
         "schema": "Article",
-        "images": ["mezzadri-tramonto", "monte-pisano-panorama", "frantoio-antico", "ramo-olivo"],
+        "images": ["mezzadri-tramonto", "monte-pisano-panorama", "corliano-frantoio-1901", "corliano-facciata", "ramo-olivo"],
         "body": CONTE,
     },
     "energia": {
