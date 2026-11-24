@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://belvedere-oliveoil.com/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://belvedere-oliveoil.com/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://belvedere-oliveoil.com/de/"/>
@@ -18,7 +18,7 @@
   </url>
   <url>
     <loc>https://belvedere-oliveoil.com/de/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://belvedere-oliveoil.com/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://belvedere-oliveoil.com/de/"/>
@@ -34,7 +34,7 @@
   </url>
   <url>
     <loc>https://belvedere-oliveoil.com/en/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://belvedere-oliveoil.com/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://belvedere-oliveoil.com/de/"/>
@@ -50,7 +50,7 @@
   </url>
   <url>
     <loc>https://belvedere-oliveoil.com/olio-del-conte/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://belvedere-oliveoil.com/olio-del-conte/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://belvedere-oliveoil.com/de/oel-des-grafen/"/>
@@ -58,12 +58,13 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://belvedere-oliveoil.com/olio-del-conte/"/>
     <image:image><image:loc>https://belvedere-oliveoil.com/assets/img/mezzadri-tramonto-1280.jpg</image:loc></image:image>
     <image:image><image:loc>https://belvedere-oliveoil.com/assets/img/monte-pisano-panorama-1280.jpg</image:loc></image:image>
-    <image:image><image:loc>https://belvedere-oliveoil.com/assets/img/frantoio-antico-1280.jpg</image:loc></image:image>
+    <image:image><image:loc>https://belvedere-oliveoil.com/assets/img/corliano-frantoio-1901-960.jpg</image:loc></image:image>
+    <image:image><image:loc>https://belvedere-oliveoil.com/assets/img/corliano-facciata-960.jpg</image:loc></image:image>
     <image:image><image:loc>https://belvedere-oliveoil.com/assets/img/ramo-olivo-1280.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://belvedere-oliveoil.com/de/oel-des-grafen/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://belvedere-oliveoil.com/olio-del-conte/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://belvedere-oliveoil.com/de/oel-des-grafen/"/>
@@ -71,12 +72,13 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://belvedere-oliveoil.com/olio-del-conte/"/>
     <image:image><image:loc>https://belvedere-oliveoil.com/assets/img/mezzadri-tramonto-1280.jpg</image:loc></image:image>
     <image:image><image:loc>https://belvedere-oliveoil.com/assets/img/monte-pisano-panorama-1280.jpg</image:loc></image:image>
-    <image:image><image:loc>https://belvedere-oliveoil.com/assets/img/frantoio-antico-1280.jpg</image:loc></image:image>
+    <image:image><image:loc>https://belvedere-oliveoil.com/assets/img/corliano-frantoio-1901-960.jpg</image:loc></image:image>
+    <image:image><image:loc>https://belvedere-oliveoil.com/assets/img/corliano-facciata-960.jpg</image:loc></image:image>
     <image:image><image:loc>https://belvedere-oliveoil.com/assets/img/ramo-olivo-1280.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://belvedere-oliveoil.com/en/the-counts-oil/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://belvedere-oliveoil.com/olio-del-conte/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://belvedere-oliveoil.com/de/oel-des-grafen/"/>
@@ -84,12 +86,13 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://belvedere-oliveoil.com/olio-del-conte/"/>
     <image:image><image:loc>https://belvedere-oliveoil.com/assets/img/mezzadri-tramonto-1280.jpg</image:loc></image:image>
     <image:image><image:loc>https://belvedere-oliveoil.com/assets/img/monte-pisano-panorama-1280.jpg</image:loc></image:image>
-    <image:image><image:loc>https://belvedere-oliveoil.com/assets/img/frantoio-antico-1280.jpg</image:loc></image:image>
+    <image:image><image:loc>https://belvedere-oliveoil.com/assets/img/corliano-frantoio-1901-960.jpg</image:loc></image:image>
+    <image:image><image:loc>https://belvedere-oliveoil.com/assets/img/corliano-facciata-960.jpg</image:loc></image:image>
     <image:image><image:loc>https://belvedere-oliveoil.com/assets/img/ramo-olivo-1280.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://belvedere-oliveoil.com/olio-energia-della-vita/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://belvedere-oliveoil.com/olio-energia-della-vita/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://belvedere-oliveoil.com/de/oel-energie-des-lebens/"/>
@@ -101,7 +104,7 @@
   </url>
   <url>
     <loc>https://belvedere-oliveoil.com/de/oel-energie-des-lebens/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://belvedere-oliveoil.com/olio-energia-della-vita/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://belvedere-oliveoil.com/de/oel-energie-des-lebens/"/>
@@ -113,7 +116,7 @@
   </url>
   <url>
     <loc>https://belvedere-oliveoil.com/en/oil-energy-of-life/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://belvedere-oliveoil.com/olio-energia-della-vita/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://belvedere-oliveoil.com/de/oel-energie-des-lebens/"/>
@@ -125,7 +128,7 @@
   </url>
   <url>
     <loc>https://belvedere-oliveoil.com/gli-olivicoltori/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://belvedere-oliveoil.com/gli-olivicoltori/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://belvedere-oliveoil.com/de/die-oelbauern/"/>
@@ -136,7 +139,7 @@
   </url>
   <url>
     <loc>https://belvedere-oliveoil.com/de/die-oelbauern/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://belvedere-oliveoil.com/gli-olivicoltori/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://belvedere-oliveoil.com/de/die-oelbauern/"/>
@@ -147,7 +150,7 @@
   </url>
   <url>
     <loc>https://belvedere-oliveoil.com/en/the-olive-growers/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://belvedere-oliveoil.com/gli-olivicoltori/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://belvedere-oliveoil.com/de/die-oelbauern/"/>
@@ -158,7 +161,7 @@
   </url>
   <url>
     <loc>https://belvedere-oliveoil.com/contatti/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://belvedere-oliveoil.com/contatti/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://belvedere-oliveoil.com/de/kontakt/"/>
@@ -168,7 +171,7 @@
   </url>
   <url>
     <loc>https://belvedere-oliveoil.com/de/kontakt/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://belvedere-oliveoil.com/contatti/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://belvedere-oliveoil.com/de/kontakt/"/>
@@ -178,7 +181,7 @@
   </url>
   <url>
     <loc>https://belvedere-oliveoil.com/en/contact/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://belvedere-oliveoil.com/contatti/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://belvedere-oliveoil.com/de/kontakt/"/>
@@ -188,7 +191,7 @@
   </url>
   <url>
     <loc>https://belvedere-oliveoil.com/mappa-del-sito/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://belvedere-oliveoil.com/mappa-del-sito/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://belvedere-oliveoil.com/de/sitemap/"/>
@@ -197,7 +200,7 @@
   </url>
   <url>
     <loc>https://belvedere-oliveoil.com/de/sitemap/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://belvedere-oliveoil.com/mappa-del-sito/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://belvedere-oliveoil.com/de/sitemap/"/>
@@ -206,7 +209,7 @@
   </url>
   <url>
     <loc>https://belvedere-oliveoil.com/en/sitemap/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://belvedere-oliveoil.com/mappa-del-sito/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://belvedere-oliveoil.com/de/sitemap/"/>

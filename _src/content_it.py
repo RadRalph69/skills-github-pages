@@ -1,6 +1,6 @@
 """Testi in italiano (lingua principale). Tutti i testi sono bozze da rivedere."""
 from config import LEGAL as L, LEGAL_DATE, FORM_ENDPOINT, FORM_PROVIDER as FP
-from lib import (fig, ph, link, section, split, h2, cards, portraits, facts, timeline, band,
+from lib import (photo, credits_list, fig, ph, link, section, split, h2, cards, portraits, facts, timeline, band,
                  table, note, calendar, btn, contact_form)
 
 UI = {
@@ -12,7 +12,7 @@ UI = {
     "nav": {"home": "Home", "conte": "L’Olio del Conte", "energia": "Olio, Energia della Vita",
             "olivicoltori": "Gli Olivicoltori", "contatti": "Contatti", "legal": "Note legali (Impressum)",
             "privacy": "Privacy", "sitemap": "Mappa del sito"},
-    "footer_claim": "Olio extravergine d’oliva biologico dagli oliveti del Monte Pisano, dove si coltiva l’olivo dal 1536.",
+    "footer_claim": "Olio extravergine d’oliva biologico dagli oliveti del Monte Pisano, dove dal 1735 i mezzadri hanno piantato gli olivi. Dalla raccolta alla bottiglia, tutto nel nostro podere.",
     "vat": "P. IVA",
     "footer_nav": "Pagine",
     "footer_legal": "Informazioni legali",
@@ -34,22 +34,24 @@ HOME = (
         + "<p>Sulle pendici del Monte Pisano, tra Pisa e Lucca, sorge Villa Belvedere: un’antica casa colonica "
           "con la sua colombaia, circondata da terrazze di olivi che guardano verso la pianura e, nelle giornate "
           "limpide, fino al mare.</p>"
-          "<p>Dal 1536 queste terre appartenevano al frantoio e al palazzo del Conte di Pisa. Generazioni di mezzadri "
-          "hanno potato, raccolto e portato le olive a valle. Oggi continuiamo quel lavoro con metodi biologici e con "
-          "lo stesso rispetto per la collina.</p>"
+          "<p>Dal 1536 la casa faceva parte dei possedimenti dei conti Agostini Fantini Venerosi della Seta. Intorno al "
+          "1735 i mezzadri cominciarono a disboscare la collina e a piantare olivi, ognuno protetto da un muretto in "
+          "pietra a mezzaluna, la «lunetta». Alcuni di quegli alberi hanno oggi circa trecento anni.</p>"
+          "<p>Oggi curiamo l’oliveto con metodi biologici e nel nostro frantoio: dalla raccolta alla bottiglia, tutto "
+          "avviene qui, con lo stesso rispetto per la collina.</p>"
           f"<p>{link('conte', 'Leggi la storia della Villa →')}</p>",
         fig("villa-belvedere", "La casa colonica di Villa Belvedere con la colombaia, tra cipressi e olivi, nella luce del tramonto",
             "La casa colonica con la sua colombaia")),
         "section--cream", label="intro")
     + '<section class="facts-band" aria-label="Villa Belvedere in cifre"><div class="wrap">'
-    + facts([("1536", "anno di fondazione del podere"), (ph("N") + " olivi", "su terrazze in pietra a secco"),
-             (ph("xxx") + " m", "di altitudine sul Monte Pisano"), ("Bio", "agricoltura biologica certificata")])
+    + facts([("1536", "anno di fondazione del podere"), ("2.320 olivi", "su terrazze in pietra a secco"),
+             ("135 m", "di altitudine sul Monte Pisano"), ("Bio", "agricoltura biologica certificata")])
     + "</div></section>"
     + section(
         h2("Tre storie, un solo olio", "storie")
         + cards([
             ("conte", "frantoio-antico", "L’antica macina in pietra del frantoio del Conte", "L’Olio del Conte",
-             "Cinquecento anni di storia: dalla casa colonica dei mezzadri al frantoio e al palazzo del Conte di Pisa."),
+             "Quasi cinquecento anni di storia: i conti della Seta, i mezzadri, le lunette e la rinascita della Villa."),
             ("energia", "olio-goccia", "Una goccia di olio verde-oro sopra olive e foglie", "Olio, Energia della Vita",
              "Che cosa rende speciale un extravergine biologico ricco di polifenoli – spiegato con semplicità."),
             ("olivicoltori", "olivicoltori-ralph-christina", "Due persone tra gli olivi al tramonto", "Gli Olivicoltori",
@@ -62,10 +64,10 @@ HOME = (
         + portraits([
             ("ritratto-conte", "Ritratto illustrato di un nobile rinascimentale con berretto nero e mantello rosso",
              "Il Conte", "1536 – il proprietario",
-             "«Ho voluto queste terrazze perché il sole della sera è il più generoso con gli olivi.»"),
+             "«Ho voluto che questa casa guardasse la valle: per questo si chiama Belvedere.»"),
             ("ritratto-mezzadra", "Ritratto illustrato di una contadina con fazzoletto rosso e cesto di olive",
-             "La mezzadra", "1700 – la famiglia del podere",
-             "«Metà del raccolto al padrone, metà a noi. Ma la fatica, quella era tutta nostra.»"),
+             "La mezzadra", "1735 – la famiglia del podere",
+             "«Abbiamo strappato il bosco alla collina, pietra su pietra, lunetta dopo lunetta.»"),
             ("ritratto-frantoiano", "Ritratto illustrato di un anziano frantoiano con berretto e grembiule",
              "Il frantoiano", "1900 – il mastro del frantoio",
              "«L’olio buono si sente in gola: se pizzica, è vivo.»"),
@@ -90,54 +92,64 @@ CONTE = (
     section(split(
         h2("Una casa colonica sulle colline di Pisa", "origini", "Le origini")
         + "<p>Nel 1536 la pianura di Pisa era ancora in gran parte paludosa e, in certe stagioni, sommersa dalle acque. "
-          "Per mettere a coltura le colline del Monte Pisano vennero chiamate famiglie di lavoratori poveri: "
-          "ricevevano una casa e un pezzo di terra, in cambio del lavoro e di una parte del raccolto.</p>"
+          "Per popolare le colline del Monte Pisano vennero chiamate famiglie di lavoratori poveri: ricevevano una "
+          "casa e un pezzo di terra, in cambio del lavoro e di una parte del raccolto.</p>"
           "<p>Così nacque Belvedere: una casa colonica in pietra, con stalla, aia e la tipica colombaia, costruita "
-          "dove lo sguardo si apre sulla valle – da qui il suo nome. Il podere apparteneva al frantoio e al palazzo "
-          f"del Conte di Pisa, {ph('nome della famiglia comitale, da verificare')}.</p>",
+          "dove lo sguardo si apre sulla valle – da qui il suo nome. Il podere faceva parte dei possedimenti dei conti "
+          "Agostini Fantini Venerosi della Seta, nobile famiglia pisana. Allora la collina era ancora coperta di bosco.</p>",
         fig("monte-pisano-panorama", "Panorama dal Monte Pisano verso la pianura pisana e il mare", "La pianura di Pisa vista dal Monte Pisano")),
         label="origini")
     + section(
         h2("Cinque secoli in breve", "cronologia", "Cronologia")
         + timeline([
-            ("1536", "La fondazione", "Il Conte di Pisa fa costruire la casa colonica e affida le terrazze a una famiglia di mezzadri. I primi olivi vengono piantati sui muri a secco."),
-            ("XVI–XVII sec.", "Bonifica e olivi", "Mentre in pianura si scavano fossi e canali, sul monte crescono gli oliveti. L’olio viene portato a dorso d’asino al frantoio del Conte."),
-            ("XVIII–XIX sec.", "Il tempo della mezzadria", "Il raccolto si divide a metà tra padrone e famiglia colonica. In casa vivono fino a tre generazioni, che conoscono ogni albero per nome."),
-            ("1964", "La fine di un’epoca", "La legge vieta nuovi contratti di mezzadria. Molte famiglie lasciano le colline per la città; tanti oliveti restano senza cure."),
-            (ph("anno"), "Anni di silenzio", f"{ph('Breve racconto degli ultimi decenni della Villa – proprietari, restauri, abbandono.')}"),
-            ("2024", "Una nuova stagione", "Ralph e Christina Striewski arrivano a Belvedere e riprendono la cura degli olivi, secondo i principi dell’agricoltura biologica."),
+            ("1536", "L’insediamento", "Sulle pendici del Monte Pisano si insediano famiglie di mezzadri. Nasce la casa colonica di Belvedere, parte dei possedimenti dei conti Agostini Fantini Venerosi della Seta."),
+            ("ca. 1735", "Dal bosco all’oliveto", "I mezzadri iniziano a disboscare la collina e a piantare olivi, quasi tutti sorretti da piccoli muretti in pietra a mezzaluna: le «lunette». Alcuni di quegli alberi crescono ancora oggi."),
+            ("XVIII–XX sec.", "Il tempo della mezzadria", "Il raccolto si divide a metà tra il padrone e la famiglia colonica. In casa vivono fino a tre generazioni, che conoscono ogni albero per nome."),
+            ("1964", "La fine di un’epoca", "I terreni del conte Agostini Fantini Venerosi della Seta passano a un imprenditore edile sardo – a eccezione della Villa di Corliano, ai piedi del Monte Pisano, proprio sotto Belvedere. I mezzadri lasciano la Villa."),
+            ("1964 – 1987", "Anni incerti", "Seguono anni di proprietà poco chiare, in cui l’oliveto non viene più curato come un tempo."),
+            ("1987", "La rinascita", "L’imprenditore monacense Rolf Freitag acquista la Villa e la ristruttura completamente nel corso di diversi anni. Anche l’oliveto torna a essere produttivo."),
+            ("2024", "Una nuova stagione", "Ralph e Christina Striewski acquistano la Villa e l’oliveto, insieme all’Azienda Agricola Villa Belvedere di Corliano, alla certificazione biologica e al frantoio aziendale."),
         ]),
         "section--cream", label="cronologia")
     + section(split(
-        h2("Il frantoio e il palazzo del Conte", "frantoio")
-        + "<p>Le olive di Belvedere non venivano spremute in casa. Scendevano a valle nelle ceste, fino al frantoio "
-          "del Conte: un grande ambiente in pietra, buio e caldo, dove una macina di granito mossa da un animale – e "
-          "più tardi dall’acqua – riduceva i frutti in pasta. La pasta veniva stesa sui fiscoli e pressata; l’olio "
-          "riposava negli orci di terracotta.</p>"
-          "<p>Una parte dell’olio prendeva la strada del palazzo di città, a Pisa, dove illuminava le lampade, "
-          "condiva la tavola del Conte e veniva scambiato con altre merci. Il resto restava alla famiglia del podere: "
-          "per tutto l’anno era cibo, medicina e luce.</p>",
-        fig("frantoio-antico", "Interno di un antico frantoio con macina in pietra e orci di terracotta", "Un antico frantoio: macina, vasca e orci"),
+        h2("Le lunette: olivi strappati al bosco", "lunette")
+        + "<p>Intorno al 1735 i mezzadri cominciarono a trasformare la collina. Disboscavano a mano, liberavano il "
+          "terreno dalle pietre e con quelle stesse pietre costruivano, attorno a ogni giovane olivo, un piccolo muretto "
+          "a mezzaluna: la <em>lunetta</em>. Trattiene la terra e l’acqua piovana sul pendio ripido e protegge le radici.</p>"
+          "<p>La maggior parte dei nostri olivi cresce ancora oggi dentro la sua lunetta. Alcuni hanno circa trecento "
+          "anni: li hanno piantati quei mezzadri, pensando ai propri nipoti.</p>"
+          "<p>La giornata seguiva il sole. Si potava in primavera, si zappava d’estate, si raccoglieva in autunno "
+          "battendo i rami con lunghe pertiche sopra teli stesi a terra. Le donne accudivano l’orto, gli animali e "
+          "la casa; i bambini raccoglievano le olive cadute, una per una. Metà del raccolto spettava al conte.</p>",
+        fig("mezzadri-tramonto", "Silhouette di una famiglia di contadini con un asino sul crinale al tramonto", "Una famiglia di mezzadri al rientro dai campi")),
+        "section--dark", label="lunette")
+    + section(split(
+        h2("Dal frantoio del conte al nostro frantoio", "frantoio")
+        + "<p>Per secoli le olive di Belvedere scendevano a valle nelle ceste, fino al frantoio del conte a Corliano: un grande "
+          "ambiente in pietra dove una macina di granito riduceva i frutti in pasta, che veniva pressata nei fiscoli. "
+          "L’olio riposava negli orci di terracotta; una parte andava al conte, il resto restava alla famiglia del "
+          "podere – per tutto l’anno era cibo, medicina e luce.</p>"
+          "<p>Nel 1964 la mezzadria finì e i mezzadri lasciarono la Villa. Dopo anni incerti, nel 1987 Rolf Freitag "
+          "acquistò la proprietà, la restaurò con cura e riportò l’oliveto alla produzione. Da lui abbiamo rilevato nel "
+          "2024 non solo la Villa e l’oliveto, ma anche l’Azienda Agricola Villa Belvedere di Corliano, con la "
+          "certificazione biologica e un <strong>frantoio proprio</strong>.</p>"
+          "<p>Per questo oggi tutto il percorso – dalla raccolta alla bottiglia – si svolge qui, sul nostro podere.</p>"
+          f"<p>{link('olivicoltori', 'Chi si prende cura degli olivi oggi →')}</p>",
+        photo("corliano-frantoio-1901", "Fotografia storica del frantoio di Corliano nel 1901", "Il frantoio di Corliano nel 1901 – oggi visitabile"),
         rev=True), label="frantoio")
     + section(split(
-        h2("La vita dei mezzadri", "mezzadri")
-        + "<p>La giornata seguiva il sole. Si potava in primavera, si zappava d’estate, si raccoglieva in autunno "
-          "battendo i rami con lunghe pertiche sopra teli stesi a terra. Le donne accudivano l’orto, gli animali e "
-          "la casa; i bambini aiutavano a raccogliere le olive cadute, una per una.</p>"
-          "<p>Il contratto di mezzadria legava famiglia e podere per generazioni. Era un patto duro, ma ha "
-          "plasmato il paesaggio che vediamo ancora oggi: i muri a secco, le terrazze, i sentieri, gli olivi "
-          "che qualcuno ha piantato pensando ai propri nipoti.</p>"
-          f"<p>{link('olivicoltori', 'Chi si prende cura degli olivi oggi →')}</p>",
-        fig("mezzadri-tramonto", "Silhouette di una famiglia di contadini con un asino sul crinale al tramonto", "Una famiglia di mezzadri al rientro dai campi")),
-        "section--dark", label="mezzadri")
+        h2("La Villa di Corliano", "corliano", "Ai piedi del Monte Pisano")
+        + "<p>Proprio sotto Belvedere, ai piedi del Monte Pisano, sorge la Villa di Corliano, residenza dei conti "
+          "Agostini Fantini Venerosi della Seta. Nel 1964 fu l’unica parte dei loro possedimenti a non passare "
+          "all’imprenditore edile sardo.</p>"
+          "<p>Della villa fa parte anche l’antico frantoio del conte, dove per secoli sono state frante le olive "
+          "della collina – comprese quelle di Belvedere. Ancora oggi lo si può visitare.</p>",
+        photo("corliano-facciata", "Facciata della Villa di Corliano ai piedi del Monte Pisano", "La Villa di Corliano")),
+        "section--cream", label="corliano")
     + band("ramo-olivo", "Ramo di olivo con olive verdi e scure controluce",
            "Un olivo non appartiene a chi lo pianta, ma a chi verrà dopo.", "Detto contadino toscano")
-    + section(note("<strong>Nota:</strong> il racconto storico è una bozza basata sulla tradizione orale e sulla storia "
-                   f"generale del Monte Pisano. {ph('Fonti d’archivio, date e nomi da verificare e integrare.')}"),
-              label=None)
 )
 
-# --------------------------------------------------------------------------- #
 ENERGIA = (
     section(split(
         h2("Che cos’è un olio extravergine d’oliva", "evo", "Le basi")
@@ -170,7 +182,7 @@ ENERGIA = (
           "dopo l’assaggio è dovuto soprattutto all’oleocantale. Un olio ricco di polifenoli è anche più stabile: "
           "si ossida più lentamente e conserva più a lungo i suoi profumi.</p>"
           "<p>La quantità dipende dalla varietà, dal grado di maturazione, dal clima e soprattutto dalla "
-          "lavorazione. Per questo raccogliamo presto e portiamo le olive al frantoio nel giro di poche ore.</p>",
+          "lavorazione. Per questo raccogliamo presto e frangiamo le olive nel nostro frantoio, a pochi passi dall’oliveto, nel giro di poche ore.</p>",
         fig("ramo-olivo", "Ramo di olivo con olive verdi e invaiate", "Olive raccolte all’invaiatura: il momento dei polifenoli"),
         rev=True), label="polifenoli")
     + section(
@@ -196,8 +208,8 @@ ENERGIA = (
           f"<li><strong>Organismo di controllo:</strong> {L['bio_body']} – codice {L['bio_code']}.</li>"
           "<li><strong>Raccolta precoce</strong> tra ottobre e inizio novembre, quando le olive iniziano a cambiare colore.</li>"
           "<li><strong>A mano o con agevolatori</strong>, su reti: nessuna oliva raccolta da terra.</li>"
-          "<li><strong>Molitura entro poche ore</strong> in frantoio a ciclo continuo, con estrazione a freddo "
-          "(temperatura inferiore a 27 °C).</li>"
+          "<li><strong>Molitura entro poche ore nel nostro frantoio aziendale</strong>, con estrazione a freddo "
+          "(temperatura inferiore a 27 °C): dalla raccolta alla bottiglia, tutto sul nostro podere.</li>"
           "<li><strong>Conservazione</strong> in contenitori di acciaio inox sotto gas inerte, al riparo da luce e calore.</li>"
           "</ul>"
           f"<p>Varietà del nostro oliveto: {ph('es. Frantoio, Leccino, Moraiolo, Pendolino')}.</p>",
@@ -224,12 +236,16 @@ ENERGIA = (
 OLIVICOLTORI = (
     section(split(
         h2("Ralph e Christina Striewski", "noi", "Chi siamo")
-        + "<p>Nel 2024 abbiamo lasciato " + ph("città/regione di provenienza") + " e ci siamo trasferiti a Belvedere. "
-          "Ci ha conquistati la luce della sera sugli olivi, il silenzio delle terrazze e la sensazione di "
-          "entrare in una storia molto più grande di noi.</p>"
-          "<p>" + ph("Breve presentazione personale: professioni precedenti, cosa vi ha portato in Italia, cosa vi lega alla terra.") + "</p>"
-          "<p>Non siamo nati contadini: abbiamo imparato – e impariamo ogni giorno – dai vicini, dai frantoiani e "
-          "dagli alberi stessi. Con loro portiamo avanti un lavoro iniziato quasi cinquecento anni fa.</p>",
+        + "<p>Diventare olivicoltori non è mai stato il nostro piano. Ralph ha volato per 41 anni, dal 1981 al 2022, "
+          "come pilota di Lufthansa, alla fine come comandante dell’Airbus A350. Christina è stilista: dal 2013 al 2021 "
+          "abbiamo guidato insieme la nostra azienda di moda, Arcanum Fashion, che produceva moda brillante e luminosa "
+          "(<a href='https://www.instagram.com/vanilla.pearl/' rel='noopener'>Christina su Instagram</a>).</p>"
+          "<p>Poi, a quanto pare, ci hanno chiamati gli olivi. Dopo il primo colloquio e la prima visita a Villa "
+          "Belvedere ci è stato subito chiaro: questo sarebbe diventato il nostro posto. Tutto il resto è stato "
+          "organizzazione – e dall’acquisto, nel 2024, tantissimo lavoro e una materia tutta nuova da imparare.</p>"
+          "<p>Non siamo nati contadini: abbiamo imparato – e impariamo ogni giorno – dai vicini, da chi ha curato "
+          "l’oliveto prima di noi e dagli alberi stessi. Con loro portiamo avanti un lavoro iniziato quasi trecento anni fa, "
+          "quando i mezzadri piantarono i primi olivi.</p>",
         fig("olivicoltori-ralph-christina", "Segnaposto: due persone e un cane tra gli olivi al tramonto",
             "Segnaposto per una foto di Ralph e Christina nell’oliveto")),
         label="noi")
@@ -238,7 +254,7 @@ OLIVICOLTORI = (
         + '<div class="trio">'
           "<div><h3>Rispetto per la collina</h3><p>Curiamo i muri a secco, lasciamo crescere l’erba tra i filari e "
           "proteggiamo api, insetti e uccelli che vivono nell’oliveto.</p></div>"
-          "<div><h3>Qualità senza compromessi</h3><p>Raccolta precoce, molitura immediata, analisi di laboratorio: "
+          "<div><h3>Qualità senza compromessi</h3><p>Raccolta precoce, molitura immediata nel nostro frantoio, analisi di laboratorio: "
           "vogliamo sapere esattamente cosa c’è nel nostro olio.</p></div>"
           "<div><h3>Una storia condivisa</h3><p>Raccontiamo la storia di Belvedere e delle persone che l’hanno "
           "vissuta, perché il paesaggio è memoria.</p></div>"
@@ -251,15 +267,19 @@ OLIVICOLTORI = (
             ("Aprile – Maggio", "Fioritura", "Gli olivi si coprono di piccoli fiori bianchi: è il momento più delicato."),
             ("Giugno – Agosto", "Allegagione", "I frutti si formano e crescono; ci prendiamo cura del suolo e dei muri."),
             ("Settembre", "Attesa", "Controlliamo la maturazione e prepariamo reti, cassette e attrezzi."),
-            ("Ottobre – Novembre", "Raccolta e molitura", "Raccogliamo all’invaiatura e portiamo le olive al frantoio in giornata."),
+            ("Ottobre – Novembre", "Raccolta e molitura", "Raccogliamo all’invaiatura e frangiamo le olive in giornata nel nostro frantoio."),
             ("Dicembre", "Riposo", "Gli alberi si riposano. Noi assaggiamo il nuovo olio e ringraziamo la collina."),
         ]),
         "section--dark", label="anno")
     + section(split(
         h2("Gli olivi di Belvedere", "olivi")
-        + f"<p>Il nostro oliveto conta circa {ph('N')} piante su {ph('x')} ettari di terrazze, tra {ph('xxx')} e "
-          f"{ph('xxx')} metri di altitudine. Alcuni alberi hanno {ph('età stimata')} anni: hanno visto passare "
-          "generazioni di mezzadri e porteranno frutti per chi verrà dopo di noi.</p>"
+        + f"<p>Il nostro oliveto conta circa 2.300 piante su circa 7,5 ettari di terrazze, tra 100 e "
+          f"160 metri di altitudine. Alcuni alberi hanno circa 300 anni: li hanno piantati i mezzadri "
+          "nelle loro lunette, e porteranno frutti per chi verrà dopo di noi.</p>"
+          "<p>Quando nel 2024 abbiamo acquistato la Villa e l’oliveto, c’era – e c’è ancora – parecchio lavoro da fare "
+          "perché tutti gli alberi tornino a dare raccolto. Insieme all’Azienda Agricola Villa Belvedere di Corliano "
+          "abbiamo rilevato la certificazione biologica e il frantoio aziendale: così l’intero processo, dalla raccolta "
+          "alla bottiglia, si svolge qui da noi.</p>"
           f"<p>{link('energia', 'Scopri le caratteristiche del nostro olio →')}</p>",
         fig("raccolta-olive", "Persone che raccolgono olive su reti sotto un olivo", "La raccolta con amici e vicini"),
         rev=True), label="olivi")
@@ -312,10 +332,10 @@ LEGAL_PAGE = section(
     + "<h3>Responsabilità per i link</h3><p>Il sito contiene link a siti esterni, sui cui contenuti non abbiamo "
       "alcuna influenza. Al momento del collegamento non erano riconoscibili contenuti illeciti. In caso di "
       "segnalazione di violazioni, rimuoveremo immediatamente tali link.</p>"
-    + "<h3>Diritto d’autore e immagini</h3><p>Testi, immagini e grafiche di questo sito sono protetti dal diritto "
+    + "<h3>Crediti fotografici</h3>" + credits_list() + "<h3>Diritto d’autore e immagini</h3><p>Testi, immagini e grafiche di questo sito sono protetti dal diritto "
       "d’autore. Ogni utilizzo al di fuori dei limiti di legge richiede il nostro consenso scritto.</p>"
       "<p>Le illustrazioni di persone e paesaggi sono immagini create digitalmente e, in parte, generate con "
-      f"intelligenza artificiale; i personaggi raffigurati sono immaginari. {ph('Crediti fotografici, se presenti')}.</p>"
+      f"intelligenza artificiale; i personaggi raffigurati sono immaginari.</p>"
       "<p>Font: Cormorant Garamond (SIL Open Font License 1.1), ospitato localmente.</p>"
     + f"<p class='fineprint'>Aggiornamento: {LEGAL_DATE['it']}</p>"
     + "</div>", label=None)
@@ -380,13 +400,13 @@ PAGES = {
     },
     "conte": {
         "title": "L’Olio del Conte – 500 anni di storia di Villa Belvedere",
-        "description": "Dal 1536 casa colonica dei mezzadri sul Monte Pisano, legata al frantoio e al palazzo del Conte "
-                       "di Pisa: la storia di Villa Belvedere e del suo olio.",
+        "description": "Dal 1536 casa colonica dei mezzadri sul Monte Pisano, dal 1735 oliveto su lunette: la storia di "
+                       "Villa Belvedere, dei conti della Seta e del suo olio.",
         "h1": "L’Olio del Conte", "nav": "L’Olio del Conte", "kicker": "Cinque secoli di storia",
-        "lead": "Da casa colonica dei mezzadri a oliveto biologico: la storia di Villa Belvedere, del frantoio e del palazzo del Conte di Pisa.",
+        "lead": "Da casa colonica dei mezzadri a oliveto biologico con frantoio proprio: la storia di Villa Belvedere.",
         "hero": "mezzadri-tramonto", "hero_alt": "Famiglia di mezzadri con un asino sul crinale del Monte Pisano al tramonto",
         "schema": "Article",
-        "images": ["mezzadri-tramonto", "monte-pisano-panorama", "frantoio-antico", "ramo-olivo"],
+        "images": ["mezzadri-tramonto", "monte-pisano-panorama", "corliano-frantoio-1901", "corliano-facciata", "ramo-olivo"],
         "body": CONTE,
     },
     "energia": {

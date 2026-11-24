@@ -1,6 +1,6 @@
 """Deutsche Texte. Alle Texte sind Entwürfe und können frei angepasst werden."""
 from config import LEGAL as L, LEGAL_DATE, FORM_PROVIDER as FP
-from lib import (fig, ph, link, section, split, h2, cards, portraits, facts, timeline, band,
+from lib import (photo, credits_list, fig, ph, link, section, split, h2, cards, portraits, facts, timeline, band,
                  table, note, calendar, btn, contact_form)
 
 UI = {
@@ -12,7 +12,7 @@ UI = {
     "nav": {"home": "Home", "conte": "Öl des Grafen", "energia": "Öl, Energie des Lebens",
             "olivicoltori": "Die Ölbauern", "contatti": "Kontakt", "legal": "Impressum",
             "privacy": "Datenschutz", "sitemap": "Sitemap"},
-    "footer_claim": "Biologisches Olivenöl extra vergine aus den Olivenhainen des Monte Pisano, wo seit 1536 Oliven wachsen.",
+    "footer_claim": "Biologisches Olivenöl extra vergine aus den Olivenhainen des Monte Pisano, wo die Mezzadri seit 1735 Olivenbäume pflanzten. Von der Ernte bis in die Flasche – alles auf unserem Hof.",
     "vat": "USt-IdNr. (P. IVA)",
     "footer_nav": "Seiten",
     "footer_legal": "Rechtliches",
@@ -33,22 +33,25 @@ HOME = (
         + "<p>An den Hängen des Monte Pisano, zwischen Pisa und Lucca, liegt die Villa Belvedere: ein altes "
           "toskanisches Bauernhaus mit Taubenturm, umgeben von Oliventerrassen, die auf die Ebene und an klaren "
           "Tagen bis zum Meer blicken.</p>"
-          "<p>Seit 1536 gehörte dieses Land zur Ölmühle und zum Palazzo des Grafen von Pisa. Generationen von "
-          "Halbpächtern – den <em>mezzadri</em> – haben hier geschnitten, geerntet und die Oliven ins Tal getragen. "
-          "Heute führen wir diese Arbeit biologisch und mit demselben Respekt vor dem Hügel fort.</p>"
+          "<p>Seit 1536 gehörte das Haus zu den Besitzungen der Grafen Agostini Fantini Venerosi della Seta. Um 1735 "
+          "begannen die Halbpächter – die <em>mezzadri</em> – den Wald zu roden und Olivenbäume zu pflanzen, jeden "
+          "geschützt von einem halbmondförmigen Steinmäuerchen, der „Lunetta“. Manche dieser Bäume sind heute rund "
+          "300 Jahre alt.</p>"
+          "<p>Heute pflegen wir den Olivenhain biologisch und pressen in unserer eigenen Ölmühle: Von der Ernte bis in "
+          "die Flasche geschieht alles hier – mit demselben Respekt vor dem Hügel.</p>"
           f"<p>{link('conte', 'Die Geschichte der Villa lesen →')}</p>",
         fig("villa-belvedere", "Das Bauernhaus der Villa Belvedere mit Taubenturm zwischen Zypressen und Olivenbäumen im Abendlicht",
             "Das Bauernhaus mit seinem Taubenturm")),
         "section--cream", label="intro")
     + '<section class="facts-band" aria-label="Villa Belvedere in Zahlen"><div class="wrap">'
-    + facts([("1536", "Gründungsjahr des Hofes"), (ph("N") + " Olivenbäume", "auf Trockenmauer-Terrassen"),
-             (ph("xxx") + " m", "Höhe am Monte Pisano"), ("Bio", "zertifizierter ökologischer Anbau")])
+    + facts([("1536", "Gründungsjahr des Hofes"), ("2.320 Olivenbäume", "auf Trockenmauer-Terrassen"),
+             ("135 m", "Höhe am Monte Pisano"), ("Bio", "zertifizierter ökologischer Anbau")])
     + "</div></section>"
     + section(
         h2("Drei Geschichten, ein Öl", "storie")
         + cards([
             ("conte", "frantoio-antico", "Der alte Mühlstein in der Ölmühle des Grafen", "Öl des Grafen",
-             "500 Jahre Geschichte: vom Bauernhaus der Halbpächter bis zur Ölmühle und zum Palazzo des Grafen von Pisa."),
+             "Fast 500 Jahre Geschichte: die Grafen della Seta, die Mezzadri, die Lunette und die Wiedergeburt der Villa."),
             ("energia", "olio-goccia", "Ein grüngoldener Öltropfen über Oliven und Blättern", "Öl, Energie des Lebens",
              "Was ein biologisches Olivenöl extra vergine mit vielen Polyphenolen besonders macht – einfach erklärt."),
             ("olivicoltori", "olivicoltori-ralph-christina", "Zwei Menschen zwischen Olivenbäumen im Sonnenuntergang", "Die Ölbauern",
@@ -61,10 +64,10 @@ HOME = (
         + portraits([
             ("ritratto-conte", "Illustriertes Porträt eines Renaissance-Adligen mit schwarzem Barett und rotem Mantel",
              "Der Graf", "1536 – der Grundherr",
-             "„Ich wollte diese Terrassen, weil die Abendsonne die großzügigste für die Oliven ist.“"),
+             "„Ich wollte, dass dieses Haus ins Tal blickt – darum heißt es Belvedere.“"),
             ("ritratto-mezzadra", "Illustriertes Porträt einer Bäuerin mit rotem Kopftuch und Olivenkorb",
-             "Die Halbpächterin", "1700 – die Familie auf dem Hof",
-             "„Die Hälfte der Ernte für den Herrn, die Hälfte für uns. Aber die Mühe, die war ganz unsere.“"),
+             "Die Halbpächterin", "1735 – die Familie auf dem Hof",
+             "„Wir haben dem Hügel den Wald abgerungen, Stein auf Stein, Lunetta um Lunetta.“"),
             ("ritratto-frantoiano", "Illustriertes Porträt eines älteren Ölmüllers mit Mütze und Schürze",
              "Der Ölmüller", "1900 – der Meister der Mühle",
              "„Gutes Öl spürt man im Hals: Wenn es kratzt, lebt es.“"),
@@ -88,50 +91,65 @@ CONTE = (
     section(split(
         h2("Ein Bauernhaus auf den Hügeln von Pisa", "origini", "Die Anfänge")
         + "<p>Im Jahr 1536 war die Ebene von Pisa noch weitgehend sumpfig und stand zu manchen Jahreszeiten unter "
-          "Wasser. Um die Hügel des Monte Pisano urbar zu machen, holte man arme Arbeiterfamilien: Sie bekamen ein "
-          "Haus und ein Stück Land – im Gegenzug für ihre Arbeit und einen Teil der Ernte.</p>"
+          "Wasser. Um die Hügel des Monte Pisano zu besiedeln, holte man arme Arbeiterfamilien: Sie bekamen ein Haus "
+          "und ein Stück Land – im Gegenzug für ihre Arbeit und einen Teil der Ernte.</p>"
           "<p>So entstand Belvedere: ein steinernes Bauernhaus mit Stall, Tenne und dem typischen Taubenturm, "
-          "errichtet dort, wo sich der Blick ins Tal öffnet – daher sein Name, „schöne Aussicht“. Der Hof gehörte "
-          f"zur Ölmühle und zum Palazzo des Grafen von Pisa, {ph('Name der Grafenfamilie, zu prüfen')}.</p>",
+          "errichtet dort, wo sich der Blick ins Tal öffnet – daher sein Name, „schöne Aussicht“. Der Hof gehörte zu "
+          "den Besitzungen der Grafen Agostini Fantini Venerosi della Seta, einer Pisaner Adelsfamilie. Damals war "
+          "der Hügel noch von Wald bedeckt.</p>",
         fig("monte-pisano-panorama", "Panorama vom Monte Pisano über die Ebene von Pisa bis zum Meer", "Die Ebene von Pisa vom Monte Pisano aus")),
         label="origini")
     + section(
         h2("Fünf Jahrhunderte im Überblick", "cronologia", "Zeitleiste")
         + timeline([
-            ("1536", "Die Gründung", "Der Graf von Pisa lässt das Bauernhaus errichten und übergibt die Terrassen einer Halbpächterfamilie. Auf den Trockenmauern werden die ersten Olivenbäume gepflanzt."),
-            ("16.–17. Jh.", "Trockenlegung und Oliven", "Während in der Ebene Gräben und Kanäle gezogen werden, wachsen am Berg die Olivenhaine. Das Öl wird auf Eselsrücken zur Mühle des Grafen gebracht."),
-            ("18.–19. Jh.", "Die Zeit der Halbpacht", "Die Ernte wird zur Hälfte zwischen Grundherr und Bauernfamilie geteilt. Im Haus leben bis zu drei Generationen, die jeden Baum beim Namen kennen."),
-            ("1964", "Das Ende einer Epoche", "Ein Gesetz verbietet neue Halbpachtverträge. Viele Familien verlassen die Hügel in Richtung Stadt; viele Olivenhaine verwildern."),
-            (ph("Jahr"), "Stille Jahre", ph("Kurze Geschichte der letzten Jahrzehnte – Besitzer, Restaurierung, Leerstand.")),
-            ("2024", "Ein neues Kapitel", "Ralph und Christina Striewski kommen nach Belvedere und übernehmen die Pflege der Olivenbäume nach den Grundsätzen des ökologischen Landbaus."),
+            ("1536", "Die Besiedlung", "An den Hängen des Monte Pisano werden Halbpächterfamilien angesiedelt. Es entsteht das Bauernhaus Belvedere, Teil der Besitzungen der Grafen Agostini Fantini Venerosi della Seta."),
+            ("um 1735", "Vom Wald zum Olivenhain", "Die Mezzadri beginnen, den Wald zu roden und Olivenbäume zu pflanzen – die meisten gestützt von kleinen halbmondförmigen Steinmäuerchen, den „Lunette“. Einige dieser Bäume wachsen noch heute."),
+            ("18.–20. Jh.", "Die Zeit der Halbpacht", "Die Ernte wird zur Hälfte zwischen Grundherr und Bauernfamilie geteilt. Im Haus leben bis zu drei Generationen, die jeden Baum beim Namen kennen."),
+            ("1964", "Das Ende einer Epoche", "Die Ländereien des Grafen Agostini Fantini Venerosi della Seta fallen an einen sardischen Bauunternehmer – ausgenommen die Villa di Corliano am Fuß des Monte Pisano, direkt unterhalb von Belvedere. Die Mezzadri verlassen die Villa."),
+            ("1964 – 1987", "Unklare Jahre", "Es folgen Jahre mit ungeklärten Besitzverhältnissen, in denen der Olivenhain nicht mehr wie früher gepflegt wird."),
+            ("1987", "Die Wiedergeburt", "Der Münchner Unternehmer Rolf Freitag kauft die Villa und renoviert sie über mehrere Jahre komplett. Auch der Olivenhain wird wieder zu einem produktiven Olivenhain."),
+            ("2024", "Ein neues Kapitel", "Ralph und Christina Striewski kaufen Villa und Olivenhain – zusammen mit der Azienda Agricola Villa Belvedere di Corliano, der Bio-Zertifizierung und der eigenen Ölmühle."),
         ]),
         "section--cream", label="cronologia")
     + section(split(
-        h2("Die Ölmühle und der Palazzo des Grafen", "frantoio")
-        + "<p>Die Oliven aus Belvedere wurden nicht im Haus gepresst. Sie wanderten in Körben ins Tal, zur Ölmühle "
-          "des Grafen: ein großer, dunkler und warmer Raum aus Stein, in dem ein Mühlstein aus Granit – erst von "
-          "einem Tier, später vom Wasser angetrieben – die Früchte zu Brei zermahlte. Der Brei wurde auf Matten "
-          "gestrichen und gepresst; das Öl ruhte in Tonkrügen.</p>"
-          "<p>Ein Teil des Öls nahm den Weg in den Stadtpalast nach Pisa. Dort brannte es in den Lampen, würzte die "
-          "Tafel des Grafen und wurde gegen andere Waren getauscht. Der Rest blieb der Familie auf dem Hof: das "
-          "ganze Jahr über Nahrung, Medizin und Licht.</p>",
-        fig("frantoio-antico", "Inneres einer alten Ölmühle mit Mühlstein und Tonkrügen", "Eine alte Ölmühle: Mühlstein, Becken und Krüge"),
+        h2("Die Lunette: Olivenbäume, dem Wald abgerungen", "lunette")
+        + "<p>Um 1735 begannen die Mezzadri, den Hügel zu verwandeln. Sie rodeten den Wald von Hand, lasen die Steine "
+          "aus dem Boden und bauten mit genau diesen Steinen um jeden jungen Olivenbaum ein kleines halbmondförmiges "
+          "Mäuerchen: die <em>Lunetta</em> (Halbmond). Sie hält Erde und Regenwasser am steilen Hang und schützt die "
+          "Wurzeln.</p>"
+          "<p>Die meisten unserer Olivenbäume stehen bis heute in ihrer Lunetta. Manche sind rund 300 Jahre alt: "
+          "Diese Halbpächter haben sie gepflanzt – mit dem Gedanken an ihre Enkel.</p>"
+          "<p>Der Tag folgte der Sonne. Im Frühjahr wurde geschnitten, im Sommer gehackt, im Herbst geerntet – mit "
+          "langen Stangen schlug man die Zweige über ausgebreiteten Tüchern. Die Frauen versorgten Garten, Tiere und "
+          "Haus; die Kinder sammelten die heruntergefallenen Oliven auf, eine nach der anderen. Die Hälfte der Ernte "
+          "gehörte dem Grafen.</p>",
+        fig("mezzadri-tramonto", "Silhouette einer Bauernfamilie mit Esel auf dem Hügelkamm im Sonnenuntergang", "Eine Halbpächterfamilie auf dem Heimweg")),
+        "section--dark", label="lunette")
+    + section(split(
+        h2("Von der Ölmühle des Grafen zur eigenen Ölmühle", "frantoio")
+        + "<p>Jahrhundertelang wanderten die Oliven aus Belvedere in Körben ins Tal, zur Ölmühle des Grafen in Corliano: ein "
+          "großer Raum aus Stein, in dem ein Mühlstein aus Granit die Früchte zu Brei zermahlte, der dann auf Matten "
+          "gepresst wurde. Das Öl ruhte in Tonkrügen; ein Teil ging an den Grafen, der Rest blieb der Familie auf dem "
+          "Hof – das ganze Jahr über Nahrung, Medizin und Licht.</p>"
+          "<p>1964 endete die Halbpacht, und die Mezzadri verließen die Villa. Nach Jahren mit unklaren "
+          "Besitzverhältnissen kaufte Rolf Freitag 1987 das Anwesen, restaurierte es sorgfältig und machte den "
+          "Olivenhain wieder produktiv. Von ihm haben wir 2024 nicht nur Villa und Olivenhain übernommen, sondern auch "
+          "die Azienda Agricola Villa Belvedere di Corliano mit Bio-Zertifizierung und <strong>eigener Ölmühle</strong>.</p>"
+          "<p>Deshalb findet heute der gesamte Weg – von der Ernte bis in die Flasche – bei uns auf dem Grundstück statt.</p>"
+          f"<p>{link('olivicoltori', 'Wer sich heute um die Bäume kümmert →')}</p>",
+        photo("corliano-frantoio-1901", "Historisches Foto der Ölmühle von Corliano aus dem Jahr 1901", "Die Ölmühle von Corliano im Jahr 1901 – heute zu besichtigen"),
         rev=True), label="frantoio")
     + section(split(
-        h2("Das Leben der Halbpächter", "mezzadri")
-        + "<p>Der Tag folgte der Sonne. Im Frühjahr wurde geschnitten, im Sommer gehackt, im Herbst geerntet – mit "
-          "langen Stangen schlug man die Zweige über ausgebreiteten Tüchern. Die Frauen versorgten Garten, Tiere "
-          "und Haus; die Kinder sammelten die heruntergefallenen Oliven auf, eine nach der anderen.</p>"
-          "<p>Der Halbpachtvertrag band Familie und Hof über Generationen. Es war ein harter Pakt, aber er hat die "
-          "Landschaft geformt, die wir heute noch sehen: Trockenmauern, Terrassen, Pfade und Olivenbäume, die "
-          "jemand für seine Enkel gepflanzt hat.</p>"
-          f"<p>{link('olivicoltori', 'Wer sich heute um die Bäume kümmert →')}</p>",
-        fig("mezzadri-tramonto", "Silhouette einer Bauernfamilie mit Esel auf dem Hügelkamm im Sonnenuntergang", "Eine Halbpächterfamilie auf dem Heimweg")),
-        "section--dark", label="mezzadri")
+        h2("Die Villa di Corliano", "corliano", "Am Fuß des Monte Pisano")
+        + "<p>Direkt unterhalb von Belvedere, am Fuß des Monte Pisano, liegt die Villa di Corliano, der Sitz der "
+          "Grafen Agostini Fantini Venerosi della Seta. 1964 war sie der einzige Teil ihrer Besitzungen, der nicht an "
+          "den sardischen Bauunternehmer ging.</p>"
+          "<p>Zur Villa gehört auch die alte Ölmühle des Grafen, in der jahrhundertelang die Oliven des Hügels gepresst "
+          "wurden – auch die aus Belvedere. Sie kann noch heute besichtigt werden.</p>",
+        photo("corliano-facciata", "Fassade der Villa di Corliano am Fuß des Monte Pisano", "Die Villa di Corliano")),
+        "section--cream", label="corliano")
     + band("ramo-olivo", "Olivenzweig mit grünen und dunklen Oliven im Gegenlicht",
            "Ein Olivenbaum gehört nicht dem, der ihn pflanzt, sondern denen, die nach ihm kommen.", "Toskanisches Bauernsprichwort")
-    + section(note("<strong>Hinweis:</strong> Die historische Darstellung ist ein Entwurf auf Grundlage mündlicher "
-                   f"Überlieferung und der allgemeinen Geschichte des Monte Pisano. {ph('Archivquellen, Daten und Namen prüfen und ergänzen.')}"))
 )
 
 ENERGIA = (
@@ -168,7 +186,7 @@ ENERGIA = (
           "nach dem Probieren geht vor allem auf das Oleocanthal zurück. Ein polyphenolreiches Öl ist außerdem "
           "stabiler: Es oxidiert langsamer und bewahrt seine Aromen länger.</p>"
           "<p>Wie viele Polyphenole ein Öl enthält, hängt von Sorte, Reifegrad, Klima und vor allem von der "
-          "Verarbeitung ab. Deshalb ernten wir früh und bringen die Oliven innerhalb weniger Stunden zur Mühle.</p>",
+          "Verarbeitung ab. Deshalb ernten wir früh und verarbeiten die Oliven innerhalb weniger Stunden in unserer eigenen Ölmühle, nur wenige Schritte vom Hain entfernt.</p>",
         fig("ramo-olivo", "Olivenzweig mit grünen und sich färbenden Oliven", "Oliven bei der Farbumstellung: der Moment der Polyphenole"),
         rev=True), label="polifenoli")
     + section(
@@ -195,8 +213,8 @@ ENERGIA = (
           f"<li><strong>Kontrollstelle:</strong> {L['bio_body']} – Code {L['bio_code']}.</li>"
           "<li><strong>Frühe Ernte</strong> zwischen Oktober und Anfang November, wenn die Oliven beginnen, ihre Farbe zu wechseln.</li>"
           "<li><strong>Von Hand oder mit Erntekämmen</strong>, auf Netzen: Keine Olive wird vom Boden aufgelesen.</li>"
-          "<li><strong>Verarbeitung innerhalb weniger Stunden</strong> in einer modernen Mühle mit Kaltextraktion "
-          "(unter 27 °C).</li>"
+          "<li><strong>Verarbeitung innerhalb weniger Stunden in unserer hofeigenen Ölmühle</strong> mit Kaltextraktion "
+          "(unter 27 °C): von der Ernte bis in die Flasche alles auf unserem Hof.</li>"
           "<li><strong>Lagerung</strong> in Edelstahltanks unter Schutzgas, geschützt vor Licht und Wärme.</li>"
           "</ul>"
           f"<p>Sorten in unserem Hain: {ph('z. B. Frantoio, Leccino, Moraiolo, Pendolino')}.</p>",
@@ -222,12 +240,16 @@ ENERGIA = (
 OLIVICOLTORI = (
     section(split(
         h2("Ralph und Christina Striewski", "noi", "Wer wir sind")
-        + "<p>2024 haben wir " + ph("Herkunftsort/-region") + " verlassen und sind nach Belvedere gezogen. Uns hat "
-          "das Abendlicht über den Olivenbäumen gefangen genommen, die Stille der Terrassen und das Gefühl, Teil "
-          "einer Geschichte zu werden, die viel größer ist als wir.</p>"
-          "<p>" + ph("Kurze persönliche Vorstellung: frühere Berufe, was Sie nach Italien geführt hat, was Sie mit dem Land verbindet.") + "</p>"
-          "<p>Wir sind keine geborenen Landwirte: Wir haben gelernt – und lernen jeden Tag – von den Nachbarn, den "
-          "Ölmüllern und von den Bäumen selbst. Mit ihnen führen wir eine Arbeit fort, die vor fast 500 Jahren begann.</p>",
+        + "<p>Olivenbauern zu werden, war nie unser Plan. Ralph ist 41 Jahre lang geflogen – von 1981 bis 2022 als "
+          "Pilot bei der Lufthansa, zuletzt als Kapitän auf dem Airbus A350. Christina ist Modedesignerin: Von 2013 bis "
+          "2021 haben wir gemeinsam unsere Modefirma Arcanum Fashion geführt, die glänzende Mode produzierte "
+          "(<a href='https://www.instagram.com/vanilla.pearl/' rel='noopener'>Christina auf Instagram</a>).</p>"
+          "<p>Doch anscheinend haben uns die Olivenbäume gerufen. Nach dem ersten Gespräch und dem ersten Besuch auf "
+          "der Villa Belvedere war uns sofort klar, dass dies unser Ort werden würde. Alles Weitere war Organisation – "
+          "und seit dem Kauf 2024 jede Menge Arbeit und eine ganz neue Materie, die wir lernen.</p>"
+          "<p>Wir sind keine geborenen Landwirte: Wir haben gelernt – und lernen jeden Tag – von den Nachbarn, von denen, "
+          "die den Hain vor uns gepflegt haben, und von den Bäumen selbst. Mit ihnen führen wir eine Arbeit fort, die vor "
+          "fast 300 Jahren begann, als die Mezzadri die ersten Olivenbäume pflanzten.</p>",
         fig("olivicoltori-ralph-christina", "Platzhalter: zwei Menschen und ein Hund zwischen Olivenbäumen im Sonnenuntergang",
             "Platzhalter für ein Foto von Ralph und Christina im Olivenhain")),
         label="noi")
@@ -236,7 +258,7 @@ OLIVICOLTORI = (
         + '<div class="trio">'
           "<div><h3>Respekt vor dem Hügel</h3><p>Wir pflegen die Trockenmauern, lassen Gras zwischen den Reihen wachsen "
           "und schützen Bienen, Insekten und Vögel, die im Olivenhain leben.</p></div>"
-          "<div><h3>Qualität ohne Kompromisse</h3><p>Frühe Ernte, sofortige Verarbeitung, Laboranalysen: Wir wollen "
+          "<div><h3>Qualität ohne Kompromisse</h3><p>Frühe Ernte, sofortige Verarbeitung in der eigenen Mühle, Laboranalysen: Wir wollen "
           "genau wissen, was in unserem Öl steckt.</p></div>"
           "<div><h3>Eine gemeinsame Geschichte</h3><p>Wir erzählen die Geschichte von Belvedere und der Menschen, die "
           "hier gelebt haben – denn Landschaft ist Erinnerung.</p></div>"
@@ -249,15 +271,19 @@ OLIVICOLTORI = (
             ("April – Mai", "Blüte", "Die Bäume bedecken sich mit kleinen weißen Blüten – die empfindlichste Zeit."),
             ("Juni – August", "Fruchtansatz", "Die Früchte bilden sich und wachsen; wir kümmern uns um Boden und Mauern."),
             ("September", "Warten", "Wir beobachten die Reife und bereiten Netze, Kisten und Werkzeug vor."),
-            ("Oktober – November", "Ernte und Pressung", "Wir ernten bei der Farbumstellung und bringen die Oliven noch am selben Tag zur Mühle."),
+            ("Oktober – November", "Ernte und Pressung", "Wir ernten bei der Farbumstellung und pressen die Oliven noch am selben Tag in unserer eigenen Ölmühle."),
             ("Dezember", "Ruhe", "Die Bäume ruhen. Wir probieren das neue Öl und danken dem Hügel."),
         ]),
         "section--dark", label="anno")
     + section(split(
         h2("Die Olivenbäume von Belvedere", "olivi")
-        + f"<p>Unser Olivenhain umfasst rund {ph('N')} Bäume auf {ph('x')} Hektar Terrassen, zwischen {ph('xxx')} und "
-          f"{ph('xxx')} Metern Höhe. Manche Bäume sind {ph('geschätztes Alter')} Jahre alt: Sie haben Generationen von "
-          "Halbpächtern kommen und gehen sehen und werden noch Früchte tragen, wenn wir längst nicht mehr hier sind.</p>"
+        + f"<p>Unser Olivenhain umfasst rund 2.300 Bäume auf ca. 7,5 Hektar Terrassen, zwischen 100 und "
+          f"160 Metern Höhe. Manche Bäume sind ca. 300 Jahre alt: Die Mezzadri haben sie in "
+          "ihre Lunette gepflanzt, und sie werden noch Früchte tragen, wenn wir längst nicht mehr hier sind.</p>"
+          "<p>Als wir 2024 Villa und Olivenhain kauften, war – und ist immer noch – einiges zu tun, damit wir alle Bäume "
+          "wieder abernten können. Mit der Azienda Agricola Villa Belvedere di Corliano haben wir auch die "
+          "Bio-Zertifizierung und die eigene Ölmühle übernommen. Deshalb findet der gesamte Prozess – vom Ernten bis in "
+          "die Flasche – bei uns auf dem Grundstück statt.</p>"
           f"<p>{link('energia', 'Die Eigenschaften unseres Öls entdecken →')}</p>",
         fig("raccolta-olive", "Menschen ernten Oliven auf Netzen unter einem Olivenbaum", "Die Ernte mit Freunden und Nachbarn"),
         rev=True), label="olivi")
@@ -312,11 +338,11 @@ LEGAL_PAGE = section(
       "wir keinen Einfluss haben. Für diese fremden Inhalte ist stets der jeweilige Anbieter verantwortlich. Zum "
       "Zeitpunkt der Verlinkung waren keine Rechtsverstöße erkennbar. Bei Bekanntwerden von Rechtsverletzungen "
       "entfernen wir derartige Links umgehend.</p>"
-    + "<h3>Urheberrecht und Bildnachweis</h3><p>Die Texte, Bilder und Grafiken dieser Website unterliegen dem "
+    + "<h3>Fotonachweise</h3>" + credits_list() + "<h3>Urheberrecht und Bildnachweis</h3><p>Die Texte, Bilder und Grafiken dieser Website unterliegen dem "
       "Urheberrecht. Jede Verwertung außerhalb der Grenzen des Urheberrechts bedarf unserer schriftlichen "
       "Zustimmung.</p>"
       "<p>Die Illustrationen von Personen und Landschaften sind digital erstellt und teilweise mit künstlicher "
-      f"Intelligenz erzeugt; die dargestellten Personen sind fiktiv. {ph('Fotonachweise, falls vorhanden')}.</p>"
+      f"Intelligenz erzeugt; die dargestellten Personen sind fiktiv.</p>"
       "<p>Schrift: Cormorant Garamond (SIL Open Font License 1.1), lokal eingebunden.</p>"
     + f"<p class='fineprint'>Stand: {LEGAL_DATE['de']}</p>"
     + "</div>")
@@ -381,13 +407,13 @@ PAGES = {
     },
     "conte": {
         "title": "Öl des Grafen – 500 Jahre Geschichte der Villa Belvedere",
-        "description": "Seit 1536 Bauernhaus der Halbpächter am Monte Pisano, verbunden mit Ölmühle und Palazzo des "
-                       "Grafen von Pisa: die Geschichte der Villa Belvedere.",
+        "description": "Seit 1536 Bauernhaus der Halbpächter am Monte Pisano, seit 1735 Olivenhain auf Lunette: die "
+                       "Geschichte der Villa Belvedere, der Grafen della Seta und ihres Öls.",
         "h1": "Öl des Grafen", "nav": "Öl des Grafen", "kicker": "Fünf Jahrhunderte Geschichte",
-        "lead": "Vom Bauernhaus der Halbpächter zum Bio-Olivenhain: die Geschichte der Villa Belvedere, der Ölmühle und des Palazzo des Grafen von Pisa.",
+        "lead": "Vom Bauernhaus der Halbpächter zum Bio-Olivenhain mit eigener Ölmühle: die Geschichte der Villa Belvedere.",
         "hero": "mezzadri-tramonto", "hero_alt": "Halbpächterfamilie mit Esel auf dem Kamm des Monte Pisano im Sonnenuntergang",
         "schema": "Article",
-        "images": ["mezzadri-tramonto", "monte-pisano-panorama", "frantoio-antico", "ramo-olivo"],
+        "images": ["mezzadri-tramonto", "monte-pisano-panorama", "corliano-frantoio-1901", "corliano-facciata", "ramo-olivo"],
         "body": CONTE,
     },
     "energia": {
