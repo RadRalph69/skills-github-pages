@@ -41,8 +41,8 @@ HOME = (
             "The farmhouse and its dovecote tower")),
         "section--cream", label="intro")
     + '<section class="facts-band" aria-label="Villa Belvedere in numbers"><div class="wrap">'
-    + facts([("1536", "year the farm was founded"), (ph("N") + " olive trees", "on dry-stone terraces"),
-             (ph("xxx") + " m", "above sea level on Monte Pisano"), ("Organic", "certified organic farming")])
+    + facts([("1536", "year the farm was founded"), ("2,320 olive trees", "on dry-stone terraces"),
+             ("135 m", "above sea level on Monte Pisano"), ("Organic", "certified organic farming")])
     + "</div></section>"
     + section(
         h2("Three stories, one oil", "storie")

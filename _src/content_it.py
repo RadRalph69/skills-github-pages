@@ -42,8 +42,8 @@ HOME = (
             "La casa colonica con la sua colombaia")),
         "section--cream", label="intro")
     + '<section class="facts-band" aria-label="Villa Belvedere in cifre"><div class="wrap">'
-    + facts([("1536", "anno di fondazione del podere"), (ph("N") + " olivi", "su terrazze in pietra a secco"),
-             (ph("xxx") + " m", "di altitudine sul Monte Pisano"), ("Bio", "agricoltura biologica certificata")])
+    + facts([("1536", "anno di fondazione del podere"), ("2.320 olivi", "su terrazze in pietra a secco"),
+             ("135 m", "di altitudine sul Monte Pisano"), ("Bio", "agricoltura biologica certificata")])
     + "</div></section>"
     + section(
         h2("Tre storie, un solo olio", "storie")

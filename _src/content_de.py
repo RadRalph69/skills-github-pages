@@ -41,8 +41,8 @@ HOME = (
             "Das Bauernhaus mit seinem Taubenturm")),
         "section--cream", label="intro")
     + '<section class="facts-band" aria-label="Villa Belvedere in Zahlen"><div class="wrap">'
-    + facts([("1536", "Gründungsjahr des Hofes"), (ph("N") + " Olivenbäume", "auf Trockenmauer-Terrassen"),
-             (ph("xxx") + " m", "Höhe am Monte Pisano"), ("Bio", "zertifizierter ökologischer Anbau")])
+    + facts([("1536", "Gründungsjahr des Hofes"), ("2.320 Olivenbäume", "auf Trockenmauer-Terrassen"),
+             ("135 m", "Höhe am Monte Pisano"), ("Bio", "zertifizierter ökologischer Anbau")])
     + "</div></section>"
     + section(
         h2("Drei Geschichten, ein Öl", "storie")
