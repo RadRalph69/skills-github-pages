@@ -156,3 +156,27 @@ def contact_form(F, lang):
   <button class="btn" type="submit">{F['send']}</button>
   <p class="form-status" role="status" aria-live="polite"></p>
 </form>"""
+
+
+# Bildnachweise für fremde Fotos (Lizenzpflicht: Urheber, Lizenz, Quelle)
+CREDITS = {
+    "corliano-frantoio-1901": ("Armani (1901)", "Public domain", None,
+                               "https://commons.wikimedia.org/wiki/File:BorgoCorlianoFrantoio.jpg"),
+    "corliano-facciata": ("Michela Simoncini", "CC BY 2.0", "https://creativecommons.org/licenses/by/2.0/",
+                          "https://commons.wikimedia.org/wiki/File:Villa_di_Corliano_-_Facciata.jpg"),
+}
+
+
+def credit(name):
+    who, lic, lic_url, src = CREDITS[name]
+    l = f'<a href="{lic_url}" rel="noopener license">{lic}</a>' if lic_url else lic
+    return (f'<small class="credit">{who} · {l} · '
+            f'<a href="{src}" rel="noopener">Wikimedia Commons</a></small>')
+
+
+def credits_list():
+    return "<ul>" + "".join(f"<li>{n}: {credit(n)}</li>" for n in CREDITS) + "</ul>"
+
+
+def photo(name, alt, caption):
+    return fig(name, alt, f"{caption}<br>{credit(name)}")

@@ -248,3 +248,6 @@ figcaption{font-family:var(--serif);font-style:italic;font-size:1.1rem;color:var
 
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
 @media print{.site-header,.site-footer,.hero-img,.band,.form{display:none}.hero{min-height:0;color:var(--ink)}body{background:#fff}}
+.credit{display:block;font-family:var(--sans);font-style:normal;font-size:.75rem;color:var(--ink-soft);margin-top:.25rem}
+.credit a{color:inherit}
+.section--dark .credit{color:var(--silver)}
