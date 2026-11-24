@@ -255,8 +255,8 @@ OLIVICOLTORI = (
         "section--dark", label="anno")
     + section(split(
         h2("Die Olivenbäume von Belvedere", "olivi")
-        + f"<p>Unser Olivenhain umfasst rund {ph('N')} Bäume auf {ph('x')} Hektar Terrassen, zwischen {ph('xxx')} und "
-          f"{ph('xxx')} Metern Höhe. Manche Bäume sind {ph('geschätztes Alter')} Jahre alt: Sie haben Generationen von "
+        + f"<p>Unser Olivenhain umfasst rund 2.300 Bäume auf ca. 7,5 Hektar Terrassen, zwischen 100 und "
+          f"160 Metern Höhe. Manche Bäume sind {ph('geschätztes Alter')} Jahre alt: Sie haben Generationen von "
           "Halbpächtern kommen und gehen sehen und werden noch Früchte tragen, wenn wir längst nicht mehr hier sind.</p>"
           f"<p>{link('energia', 'Die Eigenschaften unseres Öls entdecken →')}</p>",
         fig("raccolta-olive", "Menschen ernten Oliven auf Netzen unter einem Olivenbaum", "Die Ernte mit Freunden und Nachbarn"),

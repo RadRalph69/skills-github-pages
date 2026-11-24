@@ -257,8 +257,8 @@ OLIVICOLTORI = (
         "section--dark", label="anno")
     + section(split(
         h2("Gli olivi di Belvedere", "olivi")
-        + f"<p>Il nostro oliveto conta circa {ph('N')} piante su {ph('x')} ettari di terrazze, tra {ph('xxx')} e "
-          f"{ph('xxx')} metri di altitudine. Alcuni alberi hanno {ph('età stimata')} anni: hanno visto passare "
+        + f"<p>Il nostro oliveto conta circa 2.300 piante su circa 7,5 ettari di terrazze, tra 100 e "
+          f"160 metri di altitudine. Alcuni alberi hanno {ph('età stimata')} anni: hanno visto passare "
           "generazioni di mezzadri e porteranno frutti per chi verrà dopo di noi.</p>"
           f"<p>{link('energia', 'Scopri le caratteristiche del nostro olio →')}</p>",
         fig("raccolta-olive", "Persone che raccolgono olive su reti sotto un olivo", "La raccolta con amici e vicini"),

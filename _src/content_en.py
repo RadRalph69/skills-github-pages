@@ -251,8 +251,8 @@ OLIVICOLTORI = (
         "section--dark", label="anno")
     + section(split(
         h2("The olive trees of Belvedere", "olivi")
-        + f"<p>Our grove has around {ph('N')} trees on {ph('x')} hectares of terraces, between {ph('xxx')} and "
-          f"{ph('xxx')} metres above sea level. Some trees are {ph('estimated age')} years old: they have seen "
+        + f"<p>Our grove has around 2,300 trees on approx. 7.5 hectares of terraces, between 100 and "
+          f"160 metres above sea level. Some trees are {ph('estimated age')} years old: they have seen "
           "generations of sharecroppers come and go, and will bear fruit long after we are gone.</p>"
           f"<p>{link('energia', 'Discover the qualities of our oil →')}</p>",
         fig("raccolta-olive", "People harvesting olives onto nets under an olive tree", "Harvesting with friends and neighbours"),
