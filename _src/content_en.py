@@ -30,8 +30,8 @@ MORE = "Read more"
 HOME = (
     section(split(
         h2("One farm, five centuries, one oil", "intro", "Welcome to Villa Belvedere")
-        + "<p>On the slopes of Monte Pisano, between Pisa and Lucca, stands Villa Belvedere: an old Tuscan farmhouse "
-          "with a dovecote tower, surrounded by olive terraces that look out over the plain and, on clear days, all "
+        + "<p>On the slopes of Monte Pisano, between Pisa and Lucca, stands Villa Belvedere: an old Tuscan stone farmhouse "
+          "surrounded by olive terraces that look out over the plain and, on clear days, all "
           "the way to the sea.</p>"
           "<p>From 1536 the house was part of the estates of the Counts Agostini Fantini Venerosi della Seta. Around 1735 "
           "the sharecroppers – the <em>mezzadri</em> – began clearing the forest and planting olive trees, each one "
@@ -39,8 +39,8 @@ HOME = (
           "<p>Today we farm the grove organically and press in our own olive mill: from harvest to bottle, everything "
           "happens here, with the same respect for the hill.</p>"
           f"<p>{link('conte', 'Read the story of the Villa →')}</p>",
-        fig("villa-belvedere", "The Villa Belvedere farmhouse with its dovecote tower between cypresses and olive trees in the evening light",
-            "The farmhouse and its dovecote tower")),
+        fig("villa-belvedere", "The Villa Belvedere farmhouse between cypresses and olive trees in the evening light",
+            "The Villa Belvedere farmhouse")),
         "section--cream", label="intro")
     + '<section class="facts-band" aria-label="Villa Belvedere in numbers"><div class="wrap">'
     + facts([("1536", "year the farm was founded"), ("2,320 olive trees", "on dry-stone terraces"),
@@ -92,8 +92,8 @@ CONTE = (
         + "<p>In 1536 the plain of Pisa was still largely marshland and, in some seasons, under water. To settle the "
           "hills of Monte Pisano, poor labouring families were called in: they received a house and a plot of land in "
           "exchange for their work and a share of the harvest.</p>"
-          "<p>That is how Belvedere came to be: a stone farmhouse with a stable, a threshing floor and the typical "
-          "dovecote tower, built where the view opens onto the valley – hence its name, “beautiful view”. The farm was "
+          "<p>That is how Belvedere came to be: a stone farmhouse with a stable and a threshing "
+          "floor, built where the view opens onto the valley – hence its name, “beautiful view”. The farm was "
           "part of the estates of the Counts Agostini Fantini Venerosi della Seta, a noble family of Pisa. At that time "
           "the hill was still covered in forest.</p>",
         fig("monte-pisano-panorama", "Panorama from Monte Pisano over the plain of Pisa to the sea", "The plain of Pisa seen from Monte Pisano")),

@@ -31,7 +31,7 @@ HOME = (
     section(split(
         h2("Ein Hof, fünf Jahrhunderte, ein Öl", "intro", "Willkommen in der Villa Belvedere")
         + "<p>An den Hängen des Monte Pisano, zwischen Pisa und Lucca, liegt die Villa Belvedere: ein altes "
-          "toskanisches Bauernhaus mit Taubenturm, umgeben von Oliventerrassen, die auf die Ebene und an klaren "
+          "toskanisches Bauernhaus aus Stein, umgeben von Oliventerrassen, die auf die Ebene und an klaren "
           "Tagen bis zum Meer blicken.</p>"
           "<p>Seit 1536 gehörte das Haus zu den Besitzungen der Grafen Agostini Fantini Venerosi della Seta. Um 1735 "
           "begannen die Halbpächter – die <em>mezzadri</em> – den Wald zu roden und Olivenbäume zu pflanzen, jeden "
@@ -40,8 +40,8 @@ HOME = (
           "<p>Heute pflegen wir den Olivenhain biologisch und pressen in unserer eigenen Ölmühle: Von der Ernte bis in "
           "die Flasche geschieht alles hier – mit demselben Respekt vor dem Hügel.</p>"
           f"<p>{link('conte', 'Die Geschichte der Villa lesen →')}</p>",
-        fig("villa-belvedere", "Das Bauernhaus der Villa Belvedere mit Taubenturm zwischen Zypressen und Olivenbäumen im Abendlicht",
-            "Das Bauernhaus mit seinem Taubenturm")),
+        fig("villa-belvedere", "Das Bauernhaus der Villa Belvedere zwischen Zypressen und Olivenbäumen im Abendlicht",
+            "Das Bauernhaus der Villa Belvedere")),
         "section--cream", label="intro")
     + '<section class="facts-band" aria-label="Villa Belvedere in Zahlen"><div class="wrap">'
     + facts([("1536", "Gründungsjahr des Hofes"), ("2.320 Olivenbäume", "auf Trockenmauer-Terrassen"),
@@ -93,7 +93,7 @@ CONTE = (
         + "<p>Im Jahr 1536 war die Ebene von Pisa noch weitgehend sumpfig und stand zu manchen Jahreszeiten unter "
           "Wasser. Um die Hügel des Monte Pisano zu besiedeln, holte man arme Arbeiterfamilien: Sie bekamen ein Haus "
           "und ein Stück Land – im Gegenzug für ihre Arbeit und einen Teil der Ernte.</p>"
-          "<p>So entstand Belvedere: ein steinernes Bauernhaus mit Stall, Tenne und dem typischen Taubenturm, "
+          "<p>So entstand Belvedere: ein steinernes Bauernhaus mit Stall und Tenne, "
           "errichtet dort, wo sich der Blick ins Tal öffnet – daher sein Name, „schöne Aussicht“. Der Hof gehörte zu "
           "den Besitzungen der Grafen Agostini Fantini Venerosi della Seta, einer Pisaner Adelsfamilie. Damals war "
           "der Hügel noch von Wald bedeckt.</p>",
