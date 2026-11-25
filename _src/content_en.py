@@ -12,7 +12,7 @@ UI = {
     "nav": {"home": "Home", "conte": "The Count’s Oil", "energia": "Oil, Energy of Life",
             "olivicoltori": "The Olive Growers", "contatti": "Contact", "legal": "Legal notice",
             "privacy": "Privacy policy", "sitemap": "Site map"},
-    "footer_claim": "Organic extra virgin olive oil from the groves of Monte Pisano, where the mezzadri planted olive trees from 1735. From harvest to bottle, everything on our estate.",
+    "footer_claim": "Organic extra virgin olive oil from the groves of Monte Pisano, where the mezzadri began planting olive trees around 1735. From harvest to bottle, everything on our estate.",
     "vat": "VAT no. (P. IVA)",
     "footer_nav": "Pages",
     "footer_legal": "Legal",
@@ -30,13 +30,13 @@ MORE = "Read more"
 HOME = (
     section(split(
         h2("One farm, five centuries, one oil", "intro", "Welcome to Villa Belvedere")
-        + "<p>On the slopes of Monte Pisano, between Pisa and Lucca, stands Villa Belvedere: an old Tuscan stone farmhouse "
+        + "<p>On the slopes of Monte Pisano, between Pisa and Lucca, stands Villa Belvedere di Corliano: an old Tuscan stone farmhouse "
           "surrounded by olive terraces that look out over the plain and, on clear days, all "
           "the way to the sea.</p>"
           "<p>From 1536 the house was part of the estates of the Counts Agostini Fantini Venerosi della Seta. Around 1735 "
           "the sharecroppers – the <em>mezzadri</em> – began clearing the forest and planting olive trees, each one "
           "protected by a crescent-shaped stone wall, the “lunetta”. Some of those trees are now around 300 years old.</p>"
-          "<p>Today we farm the grove organically and press in our own olive mill: from harvest to bottle, everything "
+          "<p>Today we farm the grove organically and press our olives in our own mill: from harvest to bottle, everything "
           "happens here, with the same respect for the hill.</p>"
           f"<p>{link('conte', 'Read the story of the Villa →')}</p>",
         fig("villa-belvedere", "The Villa Belvedere farmhouse between cypresses and olive trees in the evening light",
@@ -58,7 +58,7 @@ HOME = (
         ], MORE), label="storie")
     + section(
         h2("Voices of the hill", "voci", "Who lived on this hill")
-        + '<p class="section-intro">For five centuries Monte Pisano was home to counts and farmers, millers and '
+        + '<p class="section-intro">For almost five centuries Monte Pisano was home to counts and farmers, millers and '
           "harvesters. We have imagined their faces and their voices.</p>"
         + portraits([
             ("ritratto-conte", "Illustrated portrait of a Renaissance nobleman with a black beret and red cloak",
@@ -92,7 +92,7 @@ CONTE = (
         + "<p>In 1536 the plain of Pisa was still largely marshland and, in some seasons, under water. To settle the "
           "hills of Monte Pisano, poor labouring families were called in: they received a house and a plot of land in "
           "exchange for their work and a share of the harvest.</p>"
-          "<p>That is how Belvedere came to be: a stone farmhouse with a stable and a threshing "
+          "<p>That is how Villa Belvedere came to be: a stone farmhouse with a stable and a threshing "
           "floor, built where the view opens onto the valley – hence its name, “beautiful view”. The farm was "
           "part of the estates of the Counts Agostini Fantini Venerosi della Seta, a noble family of Pisa. At that time "
           "the hill was still covered in forest.</p>",
@@ -101,13 +101,13 @@ CONTE = (
     + section(
         h2("Five centuries at a glance", "cronologia", "Timeline")
         + timeline([
-            ("1536", "The settlement", "Sharecropping families settle on the slopes of Monte Pisano. The Belvedere farmhouse is built as part of the estates of the Counts Agostini Fantini Venerosi della Seta."),
+            ("1536", "The settlement", "Sharecropping families settle on the slopes of Monte Pisano. The Villa Belvedere farmhouse is built as part of the estates of the Counts Agostini Fantini Venerosi della Seta."),
             ("c. 1735", "From forest to olive grove", "The mezzadri begin clearing the forest and planting olive trees, most of them supported by small crescent-shaped dry-stone walls, the “lunette”. Some of those trees still grow today."),
             ("18th–20th c.", "The age of sharecropping", "The harvest is split in half between landowner and farming family. Up to three generations live in the house, knowing every tree by name."),
-            ("1964", "The end of an era", "The lands of Count Agostini Fantini Venerosi della Seta pass to a Sardinian building contractor – except for Villa di Corliano at the foot of Monte Pisano, directly below Belvedere. The mezzadri leave the Villa."),
+            ("1964", "The end of an era", "The lands of Count Agostini Fantini Venerosi della Seta pass to a Sardinian building contractor – except for Villa di Corliano at the foot of Monte Pisano, directly below Belvedere. The mezzadri leave Belvedere."),
             ("1964 – 1987", "Uncertain years", "Years of unclear ownership follow, during which the olive grove is no longer tended as it once was."),
-            ("1987", "Rebirth", "Munich entrepreneur Rolf Freitag buys the Villa and renovates it completely over several years. The olive grove, too, is turned back into a productive grove."),
-            ("2024", "A new chapter", "Ralph and Christina Striewski buy the Villa and the olive grove, together with the Azienda Agricola Villa Belvedere di Corliano, its organic certification and its own olive mill."),
+            ("1987", "Rebirth", "Munich entrepreneur Rolf Freitag buys Villa Belvedere and renovates it completely over several years. He also brings the olive grove back into production."),
+            ("2024", "A new chapter", "Ralph and Christina Striewski buy Villa Belvedere and its olive grove, together with the Azienda Agricola Villa Belvedere di Corliano, its organic certification and its own olive mill."),
         ]),
         "section--cream", label="cronologia")
     + section(split(
@@ -129,9 +129,9 @@ CONTE = (
           "room where a granite millstone crushed the fruit into a paste that was then pressed on mats. The oil rested "
           "in terracotta jars; part of it went to the Count, the rest stayed with the farm family – all year round it "
           "was food, medicine and light.</p>"
-          "<p>In 1964 sharecropping ended and the mezzadri left the Villa. After years of unclear ownership, Rolf "
+          "<p>In 1964 sharecropping at Belvedere came to an end and the mezzadri left the house. After years of unclear ownership, Rolf "
           "Freitag bought the estate in 1987, restored it carefully and brought the olive grove back into production. "
-          "In 2024 we took over from him not only the Villa and the grove, but also the Azienda Agricola Villa Belvedere "
+          "In 2024 we took over from him not only Villa Belvedere and its grove, but also the Azienda Agricola Villa Belvedere "
           "di Corliano, with its organic certification and <strong>its own olive mill</strong>.</p>"
           "<p>That is why today the whole process – from harvest to bottle – takes place right here on our estate.</p>"
           f"<p>{link('olivicoltori', 'Who looks after the trees today →')}</p>",
@@ -234,13 +234,11 @@ ENERGIA = (
 OLIVICOLTORI = (
     section(split(
         h2("Ralph and Christina Striewski", "noi", "Who we are")
-        + "<p>Becoming olive growers was never our plan. Ralph flew for 41 years – from 1981 to 2022 as a Lufthansa "
-          "pilot, finally as captain of the Airbus A350. Christina is a fashion designer: from 2013 to 2021 we ran our "
+        + "<p>Becoming olive growers was never our plan. Ralph flew for 41 years – from 1981 to 2022 as a Lufthansa pilot, most recently as an Airbus A350 captain. Christina is a fashion designer: from 2013 to 2021 we ran our "
           "own fashion label together, Arcanum Fashion, which produced shimmering, glossy fashion "
           "(<a href='https://www.instagram.com/vanilla.pearl/' rel='noopener'>Christina on Instagram</a>).</p>"
           "<p>But it seems the olive trees called us. After the first conversation and the first visit to Villa "
-          "Belvedere, we knew at once that this would become our place. Everything else was organisation – and since "
-          "buying it in 2024, a great deal of work and a whole new subject to learn.</p>"
+          "Belvedere, we knew at once that this would become our place. Everything else was organisation – and since buying the estate in 2024, a great deal of work and a whole new subject to learn.</p>"
           "<p>We were not born farmers: we have learned – and learn every day – from our neighbours, from those who "
           "tended the grove before us and from the trees themselves. With them, we carry on work that began almost three "
           "hundred years ago, when the mezzadri planted the first olive trees.</p>",
@@ -274,9 +272,8 @@ OLIVICOLTORI = (
         + f"<p>Our grove has around 2,300 trees on approx. 7.5 hectares of terraces, between 100 and "
           f"160 metres above sea level. Some trees are around 300 years old: the mezzadri planted them "
           "in their lunette, and they will bear fruit long after we are gone.</p>"
-          "<p>When we bought the Villa and the grove in 2024, there was – and still is – a good deal of work to do before "
-          "every tree can be harvested again. Together with the Azienda Agricola Villa Belvedere di Corliano we took over "
-          "the organic certification and the estate’s own olive mill, so the whole process, from harvest to bottle, "
+          "<p>When we bought Villa Belvedere and its grove in 2024, there was – and still is – a good deal of work to do before "
+          "every tree can be harvested again. With the Azienda Agricola Villa Belvedere di Corliano we also took over the organic certification and the estate’s own olive mill, so the whole process, from harvest to bottle, "
           "takes place here on our land.</p>"
           f"<p>{link('energia', 'Discover the qualities of our oil →')}</p>",
         fig("raccolta-olive", "People harvesting olives onto nets under an olive tree", "Harvesting with friends and neighbours"),
@@ -286,7 +283,7 @@ OLIVICOLTORI = (
 FORM = {
     "name": "Full name", "email": "Email", "topic": "Subject",
     "topics": ["About the oil", "History of the Villa", "Visiting the olive grove", "Press and media", "Other"],
-    "message": "Message", "privacy": "I have read the {link} and agree to my data being processed to answer my enquiry.",
+    "message": "Message", "privacy": "I have read the {link}.",
     "privacy_link": "privacy policy", "send": "Send message", "required": "Required fields",
     "ok": "Thank you! Your message has been sent. We will get back to you as soon as possible.",
     "err": "Something went wrong. Please try again or write to us directly by email.",
@@ -328,7 +325,7 @@ LEGAL_PAGE = section(
     + "<h3>Liability for links</h3><p>This website contains links to external third-party websites over whose content "
       "we have no control. No legal violations were apparent at the time of linking. If we become aware of any, we "
       "will remove such links immediately.</p>"
-    + "<h3>Photo credits</h3>" + credits_list() + "<h3>Copyright and image credits</h3><p>The texts, images and graphics on this website are protected by "
+    + "<h3>Photo credits</h3>" + credits_list("en") + "<h3>Copyright</h3><p>The texts, images and graphics on this website are protected by "
       "copyright. Any use beyond the limits of copyright law requires our written consent.</p>"
       "<p>The illustrations of people and landscapes are digitally created and partly generated with artificial "
       f"intelligence; the people depicted are fictional.</p>"
@@ -356,8 +353,7 @@ PRIVACY_PAGE = section(
       f"forwarded to us by email via the service {FP['name']} (USA). The provider may process data in "
       f"the {FP['country']}; transfers are based on the EU-U.S. Data Privacy Framework or EU standard contractual "
       f"clauses (Art. 46 GDPR). Provider’s privacy policy: <a href='{FP['privacy_url']}' rel='noopener'>{FP['privacy_url']}</a>.</p>"
-      "<p>Legal basis: Art. 6(1)(b) GDPR (steps taken at your request) and Art. 6(1)(f) GDPR (legitimate interest in "
-      "answering enquiries). The data is deleted once your enquiry has been dealt with, unless statutory retention "
+      "<p>Legal basis: Art. 6(1)(f) GDPR (legitimate interest in answering enquiries); where your enquiry relates to entering into a contract, also Art. 6(1)(b) GDPR. The data is deleted once your enquiry has been dealt with, unless statutory retention "
       "obligations apply.</p>"
     + "<h2>5. Contact by email or phone</h2><p>If you contact us by email or phone, we process your details only to "
       "handle your enquiry (Art. 6(1)(b) and (f) GDPR) and delete them when they are no longer needed.</p>"
@@ -392,10 +388,10 @@ PAGES = {
         "body": HOME,
     },
     "conte": {
-        "title": "The Count’s Oil – 500 Years of Villa Belvedere",
+        "title": "The Count’s Oil – Almost 500 Years of Villa Belvedere",
         "description": "A sharecroppers’ farmhouse on Monte Pisano since 1536, an olive grove on lunette since 1735: the "
                        "story of Villa Belvedere, the Counts della Seta and its oil.",
-        "h1": "The Count’s Oil", "nav": "The Count’s Oil", "kicker": "Five centuries of history",
+        "h1": "The Count’s Oil", "nav": "The Count’s Oil", "kicker": "Almost five centuries of history",
         "lead": "From sharecroppers’ farmhouse to organic olive grove with its own mill: the story of Villa Belvedere.",
         "hero": "mezzadri-tramonto", "hero_alt": "Sharecropping family with a donkey on the ridge of Monte Pisano at sunset",
         "schema": "Article",
@@ -418,7 +414,7 @@ PAGES = {
         "description": "Since 2024 Ralph and Christina Striewski have lived at Villa Belvedere, tending the olive grove "
                        "according to the principles of organic farming. Our story.",
         "h1": "The Olive Growers", "nav": "The Olive Growers", "kicker": "At Belvedere since 2024",
-        "lead": "Ralph and Christina Striewski: a new chapter in a story five centuries long.",
+        "lead": "Ralph and Christina Striewski: a new chapter in a story almost five centuries long.",
         "hero": "olivicoltori-ralph-christina", "hero_alt": "Two people and a dog among olive trees at sunset",
         "schema": "AboutPage",
         "images": ["olivicoltori-ralph-christina", "raccolta-olive"],
@@ -435,11 +431,11 @@ PAGES = {
         "body": CONTATTI,
     },
     "legal": {
-        "title": "Legal notice", "description": "Legal notice (Impressum) of Azienda Agricola Villa Belvedere.",
+        "title": "Legal notice", "description": "Legal notice (Impressum) of Azienda Agricola Villa Belvedere di Corliano.",
         "h1": "Legal notice", "nav": "Legal notice", "body": LEGAL_PAGE,
     },
     "privacy": {
-        "title": "Privacy policy", "description": "Privacy policy under the GDPR of Azienda Agricola Villa Belvedere.",
+        "title": "Privacy policy", "description": "Privacy policy under the GDPR of Azienda Agricola Villa Belvedere di Corliano.",
         "h1": "Privacy policy", "nav": "Privacy policy", "body": PRIVACY_PAGE,
     },
     "sitemap": {

@@ -28,6 +28,7 @@ LANGS = ["it", "de", "en"]
 DEFAULT_LANG = "it"
 LOCALE = {"it": "it_IT", "de": "de_DE", "en": "en_GB"}
 LANG_NAME = {"it": "Italiano", "de": "Deutsch", "en": "English"}
+COUNTRY = {"it": "Italia", "de": "Italien", "en": "Italy"}
 
 # Seitenschlüssel -> URL-Pfad je Sprache (sprechende, sprachspezifische Slugs)
 SLUGS = {
@@ -183,7 +184,7 @@ def footer(lang):
     <div>
       <p class="footer-brand">{LOGO}<span>{BRAND}</span></p>
       <p>{ui['footer_claim']}</p>
-      <address>{LEGAL['company']}<br>{LEGAL['street']}<br>{LEGAL['zip_city']} – {LEGAL['country']}<br>
+      <address>{LEGAL['company']}<br>{LEGAL['street']}<br>{LEGAL['zip_city']} – {COUNTRY[lang]}<br>
       {ui['vat']}: {LEGAL['vat']}</address>
     </div>
     <nav aria-label="{ui['footer_nav']}"><p class="footer-h">{ui['footer_nav']}</p><ul>{nav}</ul></nav>

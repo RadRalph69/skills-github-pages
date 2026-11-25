@@ -160,7 +160,7 @@ def contact_form(F, lang):
 
 # Bildnachweise für fremde Fotos (Lizenzpflicht: Urheber, Lizenz, Quelle)
 CREDITS = {
-    "corliano-frantoio-1901": ("Armani (1901)", "Public domain", None,
+    "corliano-frantoio-1901": ("Armani", "Public domain", None,
                                "https://commons.wikimedia.org/wiki/File:BorgoCorlianoFrantoio.jpg"),
     "corliano-facciata": ("Michela Simoncini", "CC BY 2.0", "https://creativecommons.org/licenses/by/2.0/",
                           "https://commons.wikimedia.org/wiki/File:Villa_di_Corliano_-_Facciata.jpg"),
@@ -174,8 +174,12 @@ def credit(name):
             f'<a href="{src}" rel="noopener">Wikimedia Commons</a></small>')
 
 
-def credits_list():
-    titles = {"corliano-frantoio-1901": "Frantoio di Corliano, 1901", "corliano-facciata": "Villa di Corliano"}
+def credits_list(lang="it"):
+    titles = {
+        "it": {"corliano-frantoio-1901": "Frantoio di Corliano, 1901", "corliano-facciata": "Villa di Corliano, facciata"},
+        "de": {"corliano-frantoio-1901": "Ölmühle von Corliano, 1901", "corliano-facciata": "Villa di Corliano, Fassade"},
+        "en": {"corliano-frantoio-1901": "Corliano olive mill, 1901", "corliano-facciata": "Villa di Corliano, façade"},
+    }[lang]
     return "<ul>" + "".join(f"<li>{titles.get(n, n)}: {credit(n)}</li>" for n in CREDITS) + "</ul>"
 
 
