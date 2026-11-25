@@ -12,7 +12,7 @@ Imagen) passende Bilder erzeugen. Die Dateinamen in der Tabelle entsprechen den 
 | Datei (Name) | Format | Prompt |
 |---|---|---|
 | `vista-belvedere-sera` | eigenes Foto (4:3, 1920 px) | Startseite: Abendblick von der Terrasse über die Ebene – echtes Foto, nicht generiert |
-| `villa-belvedere` | 3:2 | Old Tuscan stone farmhouse (casa colonica) with dovecote tower and terracotta roof, arched loggia, cypresses, olive terraces in front, evening light |
+| `villa-belvedere` | 3:2 | Old Tuscan stone farmhouse (casa colonica) without tower, terracotta roof, arched loggia, cypresses, olive terraces in front, evening light |
 | `monte-pisano-panorama` | 16:9 | View from Monte Pisano olive terraces over the plain of Pisa towards the sea at sunset, the leaning tower small in the far distance, haze |
 | `frantoio-antico` | 3:2 | Interior of a 16th-century olive mill, large granite millstone in a stone basin, terracotta oil jars (orci), warm light from a small arched window, dust in the air |
 | `olio-goccia` | 3:2 | Macro photo of a green-gold drop of fresh extra virgin olive oil falling onto green and dark olives with olive leaves, bokeh, warm backlight (keine Flasche, kein Etikett, kein Preis) |

@@ -32,7 +32,7 @@ HOME = (
     section(split(
         h2("Un podere, cinque secoli, un olio", "intro", "Benvenuti a Villa Belvedere")
         + "<p>Sulle pendici del Monte Pisano, tra Pisa e Lucca, sorge Villa Belvedere: un’antica casa colonica "
-          "con la sua colombaia, circondata da terrazze di olivi che guardano verso la pianura e, nelle giornate "
+          "in pietra, circondata da terrazze di olivi che guardano verso la pianura e, nelle giornate "
           "limpide, fino al mare.</p>"
           "<p>Dal 1536 la casa faceva parte dei possedimenti dei conti Agostini Fantini Venerosi della Seta. Intorno al "
           "1735 i mezzadri cominciarono a disboscare la collina e a piantare olivi, ognuno protetto da un muretto in "
@@ -40,8 +40,8 @@ HOME = (
           "<p>Oggi curiamo l’oliveto con metodi biologici e nel nostro frantoio: dalla raccolta alla bottiglia, tutto "
           "avviene qui, con lo stesso rispetto per la collina.</p>"
           f"<p>{link('conte', 'Leggi la storia della Villa →')}</p>",
-        fig("villa-belvedere", "La casa colonica di Villa Belvedere con la colombaia, tra cipressi e olivi, nella luce del tramonto",
-            "La casa colonica con la sua colombaia")),
+        fig("villa-belvedere", "La casa colonica di Villa Belvedere tra cipressi e olivi, nella luce del tramonto",
+            "La casa colonica di Villa Belvedere")),
         "section--cream", label="intro")
     + '<section class="facts-band" aria-label="Villa Belvedere in cifre"><div class="wrap">'
     + facts([("1536", "anno di fondazione del podere"), ("2.320 olivi", "su terrazze in pietra a secco"),
@@ -94,7 +94,7 @@ CONTE = (
         + "<p>Nel 1536 la pianura di Pisa era ancora in gran parte paludosa e, in certe stagioni, sommersa dalle acque. "
           "Per popolare le colline del Monte Pisano vennero chiamate famiglie di lavoratori poveri: ricevevano una "
           "casa e un pezzo di terra, in cambio del lavoro e di una parte del raccolto.</p>"
-          "<p>Così nacque Belvedere: una casa colonica in pietra, con stalla, aia e la tipica colombaia, costruita "
+          "<p>Così nacque Belvedere: una casa colonica in pietra, con stalla e aia, costruita "
           "dove lo sguardo si apre sulla valle – da qui il suo nome. Il podere faceva parte dei possedimenti dei conti "
           "Agostini Fantini Venerosi della Seta, nobile famiglia pisana. Allora la collina era ancora coperta di bosco.</p>",
         fig("monte-pisano-panorama", "Panorama dal Monte Pisano verso la pianura pisana e il mare", "La pianura di Pisa vista dal Monte Pisano")),

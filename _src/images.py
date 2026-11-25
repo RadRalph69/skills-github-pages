@@ -196,8 +196,16 @@ def cypress(x, y, h, color=C["olive_dark"], w=None):
     )
 
 
-def villa(x, y, s, wall=C["stone"], shade=C["stone_dark"], roof=C["roof"], lit=True):
-    """Toskanisches Bauernhaus mit Taubenturm (colombaia)."""
+def _tower(tx, tw, th, y, H, s, wall, roof):
+    o = [f'<rect x="{tx}" y="{y - th}" width="{tw}" height="{th - H + 2}" fill="{wall}"/>',
+         f'<polygon points="{tx - 7 * s},{y - th} {tx + tw / 2},{y - th - 22 * s} {tx + tw + 7 * s},{y - th}" fill="{roof}"/>']
+    for i in range(3):
+        o.append(f'<rect x="{tx + 8 * s + i * 12 * s}" y="{y - th + 10 * s}" width="{5 * s}" height="{7 * s}" fill="{C["olive_dark"]}"/>')
+    return o
+
+
+def villa(x, y, s, wall=C["stone"], shade=C["stone_dark"], roof=C["roof"], lit=True, tower=False):
+    """Toskanisches Bauernhaus (auf Wunsch mit Taubenturm; Belvedere hat keinen)."""
     W, H = 190 * s, 74 * s
     tx, tw, th = x + 40 * s, 46 * s, 128 * s
     win = C["honey"] if lit else C["olive_dark"]
@@ -213,16 +221,9 @@ def villa(x, y, s, wall=C["stone"], shade=C["stone_dark"], roof=C["roof"], lit=T
     o.append(
         f'<polygon points="{x - 10 * s},{y - H} {x + W / 2},{y - H - 30 * s} {x + W + 10 * s},{y - H}" fill="{roof}"/>'
     )
-    # Turm
-    o.append(f'<rect x="{tx}" y="{y - th}" width="{tw}" height="{th - H + 2}" fill="{wall}"/>')
-    o.append(
-        f'<polygon points="{tx - 7 * s},{y - th} {tx + tw / 2},{y - th - 22 * s} {tx + tw + 7 * s},{y - th}" fill="{roof}"/>'
-    )
-    # Taubenlöcher
-    for i in range(3):
-        o.append(
-            f'<rect x="{tx + 8 * s + i * 12 * s}" y="{y - th + 10 * s}" width="{5 * s}" height="{7 * s}" fill="{C["olive_dark"]}"/>'
-        )
+    # Turm (nur wenn gewünscht)
+    if tower:
+        o.extend(_tower(tx, tw, th, y, H, s, wall, roof))
     # Fenster & Loggia
     for i, fx in enumerate((0.1, 0.36, 0.52, 0.78)):
         o.append(
